@@ -16,7 +16,7 @@
                   <?php
                   }
                   if($_SESSION['Role']==9) { ?>
-                  <ul>
+                  <ul>''
                     <li><a href="index.php">Accueil</a></li>
                     <li><a href="AddRefugie.php">Ajouter réfugié</a></li>
                     <li><a href="Addcamp.php">Ajouter camp</a></li>
