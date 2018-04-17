@@ -123,7 +123,6 @@
             <select class="select" name="ListeCivilité">
               <option value="Monsieur">Monsieur</option>
               <option value="Madame">Madame</option>
-              <option value="Mademoiselle">Mademoiselle</option>
             </select>
           </section>
           <label for="name">Adresse</label>
@@ -159,10 +158,7 @@
             <input class="inputText" type="text" name="Prof" value="" placeholder="Profession...">
 
             <label for="name">Etat</label>
-            <input class="inputText" type="text" name="Etat" value="" placeholder="Etat...">
-
-            <label for="Photo">Photo</label>
-            <input type="file" name="Photo" value="">
+            <input class="inputText" type="text" name="Etat" value="" placeholder="Etat...">       
           </section>
 
           <input class="btnAddRef" type="submit" name="" value="AJOUTER CLIENT">
