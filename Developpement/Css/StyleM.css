@@ -1,9 +1,9 @@
 
 /*Couleur de la barre de navigation*/
 #nav {
-   margin: 0;
-   padding: 7px 6px 0;
-   background: #7d7d7d url(../images/gradient.png) repeat-x 0 -110px;
+   margin: 2;
+   padding: 9px 6px 0;
+   background: #05a7a7 url(../images/gradient.png) repeat-x 0 -110px;
    line-height: 100%;
    border-radius: 2em;
    -webkit-border-radius: 2em;
@@ -28,16 +28,16 @@
    color: #e7e5e5;
    text-decoration: none;
    display: block;
-   padding: 8px 20px;
-   margin: 0;
+   padding: 8px 25px;
+   margin: 00px;
    -webkit-border-radius: 1.6em;
    -moz-border-radius: 1.6em;
    text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
 }
 
 #nav a:hover {
-   background: #000;
-   color: #fff;
+   background: #9cc224;
+   color: white;
 }
 
 /* sub levels link hover */
@@ -46,7 +46,7 @@
 #nav li:hover li a {
    background: none;
    border: none;
-   color: #666;
+   color: #666; /*écriture */
    -webkit-box-shadow: none;
    -moz-box-shadow: none;
 }
@@ -78,7 +78,7 @@
    top: 35px;
    left: 0;
    background: #ddd url(../images/gradient.png) repeat-x 0 0;
-   border: solid 1px #b4b4b4;
+   border: solid 1px #9cc224;
    -webkit-border-radius: 10px;
    -moz-border-radius: 10px;
    border-radius: 10px;
