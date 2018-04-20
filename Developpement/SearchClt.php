@@ -3,7 +3,7 @@
 <!-- mettre a jour tous les noms de variabales quand la base de donnée sera fini -->
   <head>
     <meta charset="utf-8">
-    <title>Recherche d'un réfugié</title>
+    <title>Recherche Client</title>
     <link rel="stylesheet" type="text/css" href="css/reboot.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -15,30 +15,25 @@
 
     date_default_timezone_set('UTC');
     //Variables qui prend le résultat du formulaire pour un meilleur traitement
-    $Name = $_POST['NameRef'];
-    $Prenom = $_POST['PrenomRef'];
-    $Civ =  $_POST['ListeCivilité'];
-    $Ville = $_POST['VilleRef'];
+    $Name = $_POST['NameCLT'];
+    $Prenom = $_POST['PrenomCLT'];
+    $Communes =  $_POST['ListeCommunes'];
     $Date = $_POST['DateNaisA']."-".$_POST['DateNaisM']."-".$_POST['DateNaisJ'];
     $requete= "";
 
     //Création de la requête SQL pour la recherche, utilisation de AND afin d'optimiser la recherche
     if($Name !=NULL){
-      $requete = "$requete"."Refugies.Nom like '".$Name."%' AND ";
+      $requete = "$requete"."Client.Nom like '".$Name."%' AND ";
     }
     if($Prenom!=NULL){
       $requete = $requete."Prenom like '%".$Prenom."%' AND ";
     }
-    if($Civ!="Inconnu"){
-      $requete = $requete."Civilite like '".$Civ."%' AND ";
-    }
-
     if($Date!="0000-00-00"){
       $requete = $requete."Date_Naissance='".$Date."' AND ";
     }
     if($Ville!=NULL){
-      $requete = $requete."Refugies.Ville like '%".$Ville."%' AND ";
-   
+      $requete = $requete."Refugies.Communes like '%".$Communes."%' AND ";
+
     $requete = substr($requete,0,-4); //On enlève les 4 derniers caractère ( AND)
   ?>
   <?php

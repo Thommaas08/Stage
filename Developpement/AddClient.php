@@ -151,14 +151,17 @@
             	<option value="SER">SAINT-ETIENNE-ROILAYE</option>
             	<option value="SPB">SAINT-PIERRE-LES-BITRY</option>
             	<option value="TLM">TRACY-LE-MONT</option>
-            	<option value="TBL">TROSLY-BREUIL</option>      	
+            	<option value="TBL">TROSLY-BREUIL</option>
             </select>
 
-            <label for="name">Profession</label>
-            <input class="inputText" type="text" name="Prof" value="" placeholder="Profession...">
+            <label for="name">Numéro de Téléphone</label>
+            <input class="inputText"type="tel" name="usrtel "placeholder="03-44....">
 
-            <label for="name">Etat</label>
-            <input class="inputText" type="text" name="Etat" value="" placeholder="Etat...">       
+            <label for="name">Personne à contacter </label>
+            <input class="inputText" type="text" name="Contact" value="" placeholder="Monsieur....">
+
+            <label for="name">Numéro de Téléphone</label>
+            <input class="inputText"type="telContact" name="usrtel "placeholder="03-44....">
           </section>
 
           <input class="btnAddRef" type="submit" name="" value="AJOUTER CLIENT">

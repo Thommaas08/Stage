@@ -11,11 +11,11 @@
          <li>
             <a href="#">Creation Menu </a><!-- n2 -->
             <ul>
-               <li><a href="#">Menu Classique</a></li>
+               <li><a href="AddMenuClass.php">Menu Classique</a></li>
                <!-- n3 -->
-               <li><a href="#">Menu Sans Sel Ajouter</a></li>
+               <li><a href="AddMenuSSEL.php">Menu Sans Sel Ajouter</a></li>
                <!-- n3 -->
-               <li><a href="#">Menu Sans Sucre Ajouter </a></li>
+               <li><a href="AddMenuSSucre.php">Menu Sans Sucre Ajouter </a></li>
             </ul>
          </li>
          <li>
@@ -35,7 +35,7 @@
       <a href="#">Bénéficiaires</a>
       <ul>
          <li><a href="AddClient.php"> Créer un Bénéficiaire </a></li>
-         <li><a href="SearchClt.php">Rechercher un Bénéficiaire</a></li>
+         <li><a href="recherche.php">Rechercher un Bénéficiaire</a></li>
       </ul>
    </li>
    <li>
