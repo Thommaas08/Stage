@@ -19,14 +19,11 @@
 <body>
   <?php include 'header.php' ?>
 
-  <form>
-    <!-- <label for="name">Date début du menu :</label>
-    <script>DateInput('orderdate', true, 'DD-MON-YYYY')</script>
-    <label for="name">Date fin du menu :</label>
-    <script>DateInput('orderdate', true, 'DD-MON-YYYY')</script> -->
-<head>
+  <form enctype="multipart/form-data" class="ADDForm" action="InsertMenuClass.php" method="post">
+
+<head
   <br>
-  <input class="inputText" type="text" name="Contact" value="" placeholder="Menu ..">
+  <input class="inputText" type="text" name="NomMenu" value="" placeholder="Menu ..">
   <input class="btnAddRef" type="submit" name="" value="AJOUTER Menu">
   <br>
 </head>

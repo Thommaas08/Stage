@@ -10,7 +10,7 @@ session_start();
               JP, JE1, JE2, JE3, JV1, JV2, JLE1, JLE2, JASC, JLAIT, JLAIT2, JLAIT3, JDES1, JDES2, JDES3,
               VP, VE1, VE2, VE3, VV1, VV2, VLE1, VLE2, VASC, VLAIT1,VLAIT2, VLAIT3, VDES1, VDES2, VDES3,
               SP, SE1, SE2, SE3, SV1, SV2, SLE1, SLE2, SASC, SLAIT1, SLAIT2, SLAIT3, SDES1, SDES2, SDES3,
-              D`, DE1, DE2, DE3, DV1, DV2, DLE1, DLE2, DASC, DLAIT1, DLAIT2, DLAIT3, DDES1, DDES2, DDES3,
+              DP, DE1, DE2, DE3, DV1, DV2, DLE1, DLE2, DASC, DLAIT1, DLAIT2, DLAIT3, DDES1, DDES2, DDES3,
               MELAIT1, MELAIT2, MELAIT3, MEDES1, MEDES2, MEDES3)
               VALUES (NULL, '".$_POST['NomMenu']."',
                  '".$_POST['lP']."','".$_POST['lEntre1']."', '".$_POST['lEntre2']."', '".$_POST['lEntre3']."', '".$_POST['lviande1']."', '".$_POST['lviande2']."', '".$_POST['llegume1']."', '".$_POST['llegume2']."',
