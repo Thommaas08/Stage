@@ -68,7 +68,7 @@ footer{
   padding-top: 4rem;
   text-align: center;
 }
-.FOMRAddM{
+.FORMAddM{
   /* padding-top: 4rem; */
   text-align: center;
 }
@@ -76,8 +76,8 @@ footer{
 section.bloc{
     width:50%;
     position:none;
-    float: left;
-    text-align: left;
+    float: right;
+    text-align: center;
   }
 
 section.left{
@@ -96,11 +96,11 @@ label{
 
 .inputText{
   background-color: rgba(255, 0, 0, 0);
-  text-decoration-color: #9cc224;
+  text-decoration-color: #05a7a7;
   border-radius: 5px;
   width: 25rem;
   height: 3.3rem;
-  color : #9cc224;
+  color : #05a7a7;
   padding-left: 4px;
   border : 1px solid #9cc224;
 }

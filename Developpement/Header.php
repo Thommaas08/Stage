@@ -36,6 +36,7 @@
       <ul>
          <li><a href="AddClient.php"> Créer un Bénéficiaire </a></li>
          <li><a href="recherche.php">Rechercher un Bénéficiaire</a></li>
+         <li><a href="Test.php">page Test</a></li>
       </ul>
    </li>
    <li>

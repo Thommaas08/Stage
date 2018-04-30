@@ -21,7 +21,7 @@
 
         <label for="DateNais">Date de naissance</label>
         <div class="SelectDate">
-          <!-- Listes déroulantes pour date de naissance allant jusqu'a 1931 (à mettre en BBD!) -->
+          <!-- Listes déroulantes pour date de naissance allant jusqu'a 1931  -->
           <select class="selectD" name="DateNaisJ">
             <option value="00">Jour</option><option value="01">1</option><option value="02">2</option><option value="03">3</option><option value="04">4</option><option value="05">5</option><option value="06">6</option>
             <option value="07">7</option><option value="08">8</option><option value="09">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option>
@@ -124,7 +124,7 @@
           <option value="Monsieur">Monsieur</option>
           <option value="Madame">Madame</option>
         </select>
-        <label for="ListeCivilité">Regime Menu</label>
+        <label for="name">Regime Menu</label>
         <select class="select" name="ListeMenu">
           <option value="Monsieur">Normal</option>
           <option value="Madame">Sans Sucre Ajouter</option>
@@ -135,8 +135,8 @@
       <section class="bloc right">
         <label for="name">Adresse</label>
         <input class="inputText" type="text" name="AdreBenef" value="" placeholder="10 rue...">
-        <label for="ListeNationalité">Communes</label>
-        <!-- Liste déroulante de 20 communes (à mettre en BDD)-->
+        <label for="ListeCommunes">Communes</label>
+        <!-- Liste déroulante de 20 communes -->
         <select class="select" name="ListeCommunes">
           <option value="N"></option>
           <option value="ATY">ATTICHY</option>
@@ -161,11 +161,11 @@
           <option value="TBL">TROSLY-BREUIL</option>
         </select>
         <label for="name">Numéro de Téléphone</label>
-        <input class="inputText"type="tel" name="usrtel "placeholder="03-44....">
+        <input class="inputText"type="text" name="usrtel" placeholder="03-44....">
         <label for="name">Personne à contacter </label>
         <input class="inputText" type="text" name="PersoContact" value="" placeholder="Monsieur....">
         <label for="name">Numéro de Téléphone</label>
-        <input class="inputText"type="telContact" name="PersoUsrtel "placeholder="03-44....">
+        <input class="inputText"type="text" name="PersoUsrtel" placeholder="03-44....">
       </section>
 
       <input class="btnAddRef" type="submit" name="" value="AJOUTER CLIENT">
