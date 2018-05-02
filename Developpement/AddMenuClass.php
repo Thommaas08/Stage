@@ -6,24 +6,17 @@
   <link rel="stylesheet" type="text/css" href="css/reboot.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <!-- <script type="text/javascript" src="Js/calendarDateInput.js"> -->
 
-  <!-- /***********************************************
-  * Jason's Date Input Calendar- By Jason Moon http://calendar.moonscript.com/dateinput.cfm
-  * Script featured on and available at http://www.dynamicdrive.com
-  * Keep this notice intact for use.
-  ***********************************************/ -->
-
-  <!-- </script> -->
 </head>
 <body>
   <?php include 'header.php' ?>
 
   <form enctype="multipart/form-data" class="ADDForm" action="InsertMenuClass.php" method="post">
 
-<head
+<head>
   <br>
   <input class="inputText" type="text" name="NomMenu" value="" placeholder="Menu ..">
+    <input class="inputText" type="date" name="DateNais"  placeholder="">
   <input class="btnAddRef" type="submit" name="" value="AJOUTER Menu">
   <br>
 </head>
@@ -55,7 +48,7 @@
         <li>Entree <input type="inpuText" name="MerEntre1" value="">  <input type="text" name="MerEntre2" value="">  <input type="text" name="MerEntre3" value=""></li>
         <li> Plat Garnis : Viande <input type="text" name="Merviande1" value=""><input type="text" name="Merviande2" value=""><br> Legumes <input type="text" name="Merlegume1" value=""><input type="text" name="Merlegume2" value=""></li>
         <li> Assiette Complet <input type="text" name="MerAsc" value=""></li>
-        <li> Produit Laitiers <input type="inpuText" name="Merlaitage1" value="">  <input type="text" name="Merlaitage2" value="">  <input type="text" name="Merlaitage3" value=""></li>
+        <li> Produit Laitiers <input type="inpuText" name="Merlaitage1" value=""> <input type="text" name="Merlaitage2" value=""> <input type="text" name="Merlaitage3" value=""></li>
         <li>Dessert <input type="inpuText" name="Merdessert1" value="">  <input type="text" name="Merdessert2" value="">  <input type="text" name="Merdessert3" value=""></li>
       </section>
     </div><div class="FORMAddM">
