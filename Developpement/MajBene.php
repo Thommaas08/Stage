@@ -8,7 +8,7 @@ $req = $bdd->prepare('UPDATE client set Civi=:Civi,Nom=:Nom,Prenom=:Prenom,Adres
   $req->bindValue(':Prenom', $_POST['Prenom'],PDO::PARAM_INT);
   $req->bindValue(':Adress', $_POST['Adresse'],PDO::PARAM_INT);
   $req->bindValue(':Commune', $_POST['Commune'],PDO::PARAM_INT);
-  $req->bindValue(':Regime', $_POST['mon_Menu'],PDO::PARAM_INT);
+  $req->bindValue(':Regime', $_POST['Regime'],PDO::PARAM_INT);
   $req->bindValue(':DateNais', $_POST['DateNais'],PDO::PARAM_INT);
   $req->bindValue(':ContactCivi', $_POST['mon_champ1'],PDO::PARAM_INT);
   $req->bindValue(':Contact', $_POST['Contact'],PDO::PARAM_INT);

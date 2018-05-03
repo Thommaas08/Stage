@@ -40,10 +40,12 @@ $client = $pdoStat ->fetch();
         <label for="name">Commune</label>
         <input class="inputText" type="text" name="Commune"  value="<?= $client['Commune'] ?>">
 
-        <label for="name">Regime</label>
+        <!-- <label for="name">Regime</label>
         <input type="radio" name="mon_Menu" />Normal
         <input type="radio" name="mon_Menu" />Sans Sel
-        <input type="radio" name="mon_Menu" />Sans Sucre
+        <input type="radio" name="mon_Menu" />Sans Sucre -->
+        <label for="name">Regime</label>
+        <input class="inputText" type="text" name="Regime"  value="<?= $client['Regime'] ?>">
 
         <label for="name">Date de naissance</label>
         <input class="inputText" type="date" name="DateNais"  value="<?= $client['DateNais'] ?>">
