@@ -36,6 +36,8 @@
 
         <label for="name">Date de naissance</label>
         <input class="inputText" type="date" name="DateNais"  placeholder="">
+        <label for="name">Numero de téléphone </label>
+        <input class="inputText" type="text" name="Telephone"  placeholder="Numero de telephone">
 
 
       </section>

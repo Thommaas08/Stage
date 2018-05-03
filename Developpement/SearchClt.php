@@ -49,14 +49,10 @@
 
         </section>
 
-          <section class="Text Right">
-          <p class="InfosRefD">Date Naissance : <?php echo ($data['DateNais']); ?></p>
-          <p class="">Adresse : <?php echo($data['Adress']) ?>Commune:  <?php echo($data['Commune']) ?></p>
-          <form class="" action="#" method="post">
-            <input class="btnAddRef" type="submit" name="" value="Modifier">
-            <input class="btnAddRef" type="submit" name="" value="Supprimer">
-          </form>
-        </section>
+        <p class="InfosRefD">Date Naissance : <?php echo ($data['DateNais']); ?></p>
+        <p class="">Adresse : <?php echo($data['Adress']) ?>Commune:  <?php echo($data['Commune']) ?></p>
+        <a href="Supprime.php?numclient=<?= $data['Id']?>">Supprimer</a>
+        <a href="TestModif.php?numclient=<?= $data['Id']?>">Modifier</a>
       </div>
 
       <?php
