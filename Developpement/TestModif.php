@@ -26,12 +26,12 @@ $client = $pdoStat ->fetch();
         <h1>Informations Bénéficiaire</h1>
         <input type="hidden" name="Id" value="<?= $client['Id']  ?>">
         <label for="name">Civilité</label>
-        <input type="radio" name="mon_champ" value="Monsieur"/>Monsieur
-        <input type="radio" name="mon_champ" value="Madame"/>Madame
+        <input type="radio" name="mon_champ" value="Monsieur"/> Monsieur
+        <input type="radio" name="mon_champ" value="Madame"/> Madame
 
         <label for="name">Nom</label>
         <input class="inputText" type="text" name="Nom"  value="<?= $client['Nom'] ?>">
-        <label for="name">Prenom</label>
+        <label for="name">Prénom</label>
         <input class="inputText" type="text" name="Prenom"  value="<?= $client['Prenom'] ?>">
 
         <label for="name">Adresse</label>
@@ -44,12 +44,12 @@ $client = $pdoStat ->fetch();
         <input type="radio" name="mon_Menu" />Normal
         <input type="radio" name="mon_Menu" />Sans Sel
         <input type="radio" name="mon_Menu" />Sans Sucre -->
-        <label for="name">Regime</label>
+        <label for="name">Régime</label>
         <input class="inputText" type="text" name="Regime"  value="<?= $client['Regime'] ?>">
 
         <label for="name">Date de naissance</label>
         <input class="inputText" type="date" name="DateNais"  value="<?= $client['DateNais'] ?>">
-        <label for="name">Numero de téléphone </label>
+        <label for="name">Numéro de téléphone </label>
         <input class="inputText" type="text" name="Telephone"  value="<?= $client['Telephone'] ?>">
 
 
@@ -63,7 +63,7 @@ $client = $pdoStat ->fetch();
 
         <label for="name">Personne a contacter</label>
         <input class="inputText" type="text" name="Contact"  value="<?= $client['Contact'] ?>">
-        <label for="name">Numero de téléphone </label>
+        <label for="name">Numéro de téléphone </label>
         <input class="inputText" type="text" name="TelContact"  value="<?= $client['TelContact'] ?>">
         <br>
 

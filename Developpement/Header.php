@@ -9,19 +9,19 @@
       <a href="#">Administration</a><!-- n1 -->
       <ul>
          <li>
-            <a href="#">Creation Menu </a><!-- n2 -->
+            <a href="#">Création Menu </a><!-- n2 -->
             <ul>
                <li><a href="AddMenuClass.php">Menu Classique</a></li>
                <!-- n3 -->
-               <li><a href="AddMenuSSEL.php">Menu Sans Sel Ajouter</a></li>
+               <li><a href="AddMenuSSEL.php">Menu Sans Sel </a></li>
                <!-- n3 -->
-               <li><a href="AddMenuSSucre.php">Menu Sans Sucre Ajouter </a></li>
+               <li><a href="AddMenuSSucre.php">Menu Sans Sucre </a></li>
             </ul>
          </li>
          <li>
             <a href="#"> Commande </a><!-- n2 -->
             <ul>
-               <li><a href="#">Créer une Commande</a></li>
+               <li><a href="Commande.php">Créer une Commande</a></li>
                <!-- n3 -->
                <li><a href="#">Annuler une Commande</a></li>
                <!-- n3 -->

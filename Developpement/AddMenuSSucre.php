@@ -30,10 +30,10 @@
       <section class="bloc left">
         <h1>lundi</h1>
         <li> Potage <input type="text" name="Entre1" value=""></li>
-        <li>Entree <input type="inpuText" name="Entre1" value="">  </li>
-        <li> Plat Garnis : Viande <input type="text" name="Entre1" value=""><br> Legumes <input type="text" name="Entre1" value=""></li>
-        <li> Assiette Complet <input type="text" name="Entre1" value=""></li>
-        <li> Produit Laitiers <input type="inpuText" name="Entre1" value="">  </li>
+        <li>Entrée <input type="inpuText" name="Entre1" value="">  </li>
+        <li> Plat Garni : Viande <input type="text" name="Entre1" value=""><br> Légumes <input type="text" name="Entre1" value=""></li>
+        <li> Assiette Complète <input type="text" name="Entre1" value=""></li>
+        <li> Produit Laitier <input type="inpuText" name="Entre1" value="">  </li>
         <li>Dessert <input type="inpuText" name="Entre1" value="">
         </section>
       </div>
@@ -41,60 +41,60 @@
         <section class="bloc right">
           <h1>Mardi</h1>
           <li> Potage <input type="text" name="Entre1" value=""></li>
-          <li>Entree <input type="inpuText" name="Entre1" value="">  </li>
-          <li> Plat Garnis : Viande <input type="text" name="Entre1" value=""><br> Legumes <input type="text" name="Entre1" value=""></li>
-          <li> Assiette Complet <input type="text" name="Entre1" value=""></li>
-          <li> Produit Laitiers <input type="inpuText" name="Entre1" value="">  </li>
+          <li>Entrée <input type="inpuText" name="Entre1" value="">  </li>
+          <li> Plat Garni : Viande <input type="text" name="Entre1" value=""><br> Légumes <input type="text" name="Entre1" value=""></li>
+          <li> Assiette Complète <input type="text" name="Entre1" value=""></li>
+          <li> Produit Laitier <input type="inpuText" name="Entre1" value="">  </li>
           <li>Dessert <input type="inpuText" name="Entre1" value="">
           </section>
         </div><div class="FORMAddM">
           <section class="bloc left">
             <h1>Mercredi</h1>
             <li> Potage <input type="text" name="Entre1" value=""></li>
-            <li>Entree <input type="inpuText" name="Entre1" value="">  </li>
-            <li> Plat Garnis : Viande <input type="text" name="Entre1" value=""><br> Legumes <input type="text" name="Entre1" value=""></li>
-            <li> Assiette Complet <input type="text" name="Entre1" value=""></li>
-            <li> Produit Laitiers <input type="inpuText" name="Entre1" value="">  </li>
+            <li>Entrée <input type="inpuText" name="Entre1" value="">  </li>
+            <li> Plat Garni : Viande <input type="text" name="Entre1" value=""><br> Légumes <input type="text" name="Entre1" value=""></li>
+            <li> Assiette Complète <input type="text" name="Entre1" value=""></li>
+            <li> Produit Laitier <input type="inpuText" name="Entre1" value="">  </li>
             <li>Dessert <input type="inpuText" name="Entre1" value="">
             </section>
           </div><div class="FORMAddM">
             <section class="bloc left">
               <h1>Jeudi</h1>
               <li> Potage <input type="text" name="Entre1" value=""></li>
-              <li>Entree <input type="inpuText" name="Entre1" value="">  </li>
-              <li> Plat Garnis : Viande <input type="text" name="Entre1" value=""><br> Legumes <input type="text" name="Entre1" value=""></li>
-              <li> Assiette Complet <input type="text" name="Entre1" value=""></li>
-              <li> Produit Laitiers <input type="inpuText" name="Entre1" value="">  </li>
+              <li>Entrée <input type="inpuText" name="Entre1" value="">  </li>
+              <li> Plat Garni : Viande <input type="text" name="Entre1" value=""><br> Légumes <input type="text" name="Entre1" value=""></li>
+              <li> Assiette Complète <input type="text" name="Entre1" value=""></li>
+              <li> Produit Laitier <input type="inpuText" name="Entre1" value="">  </li>
               <li>Dessert <input type="inpuText" name="Entre1" value="">
               </section>
             </div><div class="FORMAddM">
               <section class="bloc left">
                 <h1>Vendredi</h1>
                 <li> Potage <input type="text" name="Entre1" value=""></li>
-                <li>Entree <input type="inpuText" name="Entre1" value="">  </li>
-                <li> Plat Garnis : Viande <input type="text" name="Entre1" value=""><br> Legumes <input type="text" name="Entre1" value=""></li>
-                <li> Assiette Complet <input type="text" name="Entre1" value=""></li>
-                <li> Produit Laitiers <input type="inpuText" name="Entre1" value="">  </li>
+                <li>Entrée <input type="inpuText" name="Entre1" value="">  </li>
+                <li> Plat Garni : Viande <input type="text" name="Entre1" value=""><br> Légumes <input type="text" name="Entre1" value=""></li>
+                <li> Assiette Complète <input type="text" name="Entre1" value=""></li>
+                <li> Produit Laitier <input type="inpuText" name="Entre1" value="">  </li>
                 <li>Dessert <input type="inpuText" name="Entre1" value="">
                 </section>
               </div><div class="FORMAddM">
                 <section class="bloc left">
                   <h1>Samedi</h1>
                   <li> Potage <input type="text" name="Entre1" value=""></li>
-                  <li>Entree <input type="inpuText" name="Entre1" value="">  </li>
-                  <li> Plat Garnis : Viande <input type="text" name="Entre1" value=""><br> Legumes <input type="text" name="Entre1" value=""></li>
-                  <li> Assiette Complet <input type="text" name="Entre1" value=""></li>
-                  <li> Produit Laitiers <input type="inpuText" name="Entre1" value="">  </li>
+                  <li>Entrée <input type="inpuText" name="Entre1" value="">  </li>
+                  <li> Plat Garni : Viande <input type="text" name="Entre1" value=""><br> Légumes <input type="text" name="Entre1" value=""></li>
+                  <li> Assiette Complète <input type="text" name="Entre1" value=""></li>
+                  <li> Produit Laitier <input type="inpuText" name="Entre1" value="">  </li>
                   <li>Dessert <input type="inpuText" name="Entre1" value="">
                   </section>
                 </div><div class="FORMAddM">
                   <section class="bloc left">
                     <h1>Dimanche</h1>
                     <li> Potage <input type="text" name="Entre1" value=""></li>
-                    <li>Entree <input type="inpuText" name="Entre1" value="">  </li>
-                    <li> Plat Garnis : Viande <input type="text" name="Entre1" value=""><br> Legumes <input type="text" name="Entre1" value=""></li>
-                    <li> Assiette Complet <input type="text" name="Entre1" value=""></li>
-                    <li> Produit Laitiers <input type="inpuText" name="Entre1" value="">  </li>
+                    <li>Entrée <input type="inpuText" name="Entre1" value="">  </li>
+                    <li> Plat Garni : Viande <input type="text" name="Entre1" value=""><br> Légumes <input type="text" name="Entre1" value=""></li>
+                    <li> Assiette Complète <input type="text" name="Entre1" value=""></li>
+                    <li> Produit Laitier <input type="inpuText" name="Entre1" value="">  </li>
                     <li>Dessert <input type="inpuText" name="Entre1" value="">
                     </section>
                   </div>

@@ -42,8 +42,8 @@
       <div class="ligne">
         <section class="Text Left">
 
-          <div class="InfosRefG"><p>Civilité :<?php echo($data['Civi']); ?></p>
-          <p>Nom : <?php echo($data['Nom']);?> Prenom : <?php echo($data['Prenom']); ?></p>
+          <div class="InfosRefG"><p>Civilité : <?php echo($data['Civi']); ?></p>
+          <p> <?php echo($data['Nom']);?>  <?php echo($data['Prenom']); ?></p>
 
           </div>
 

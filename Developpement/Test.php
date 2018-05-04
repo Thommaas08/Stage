@@ -13,14 +13,14 @@
     <!-- Formulaire HTML pour ajouter un client -->
     <form enctype="multipart/form-data" class="ADDForm" action="TestInsert.php" method="post">
       <section class="bloc left">
-        <h1>Information Bénéficiaire</h1>
+        <h1>Informations Bénéficiaire</h1>
         <label for="name">Civilité</label>
-        <input type="radio" name="mon_champ" value="Monsieur"/>Monsieur
-        <input type="radio" name="mon_champ" value="Madame"/>Madame
+        <input type="radio" name="mon_champ" value="Monsieur"/> Monsieur
+        <input type="radio" name="mon_champ" value="Madame"/> Madame
 
         <label for="name">Nom</label>
         <input class="inputText" type="text" name="Nom"  placeholder="Nom...">
-        <label for="name">Prenom</label>
+        <label for="name">Prénom</label>
         <input class="inputText" type="text" name="Prenom"  placeholder="Prenom...">
 
         <label for="name">Adresse</label>
@@ -29,14 +29,14 @@
         <label for="name">Commune</label>
         <input class="inputText" type="text" name="Commune"  placeholder="Commune">
 
-        <label for="name">Regime</label>
-        <input type="radio" name="mon_Menu" value="Normal"/>Normal
-        <input type="radio" name="mon_Menu" value="Sans Sel"/>Sans Sel
-        <input type="radio" name="mon_Menu" value="Sans Sucre"/>Sans Sucre
+        <label for="name">Régime</label>
+        <input type="radio" name="mon_Menu" value="Normal"/> Normal
+        <input type="radio" name="mon_Menu" value="Sans Sel"/> Sans Sel
+        <input type="radio" name="mon_Menu" value="Sans Sucre"/> Sans Sucre
 
         <label for="name">Date de naissance</label>
         <input class="inputText" type="date" name="DateNais"  placeholder="">
-        <label for="name">Numero de téléphone </label>
+        <label for="name">Numéro de téléphone </label>
         <input class="inputText" type="text" name="Telephone"  placeholder="Numero de telephone">
 
 
@@ -48,9 +48,9 @@
         <input type="radio" name="mon_champ1" value="Monsieur"/> Monsieur
         <input type="radio" name="mon_champ1" value="Madame"/> Madame
 
-        <label for="name">Personne a contacter</label>
+        <label for="name">Personne à contacter</label>
         <input class="inputText" type="text" name="Contact"  placeholder="Nom de famille">
-        <label for="name">Numero de téléphone </label>
+        <label for="name">Numéro de téléphone </label>
         <input class="inputText" type="text" name="TelContact"  placeholder="Numero de telephone">
         <br>
 

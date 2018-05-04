@@ -79,6 +79,12 @@ section.bloc{
     float:left;
     text-align: justify;
   }
+  section.bloc1{
+      width:50%;
+      position:none;
+      float:center;
+      text-align: justify;
+    }
 
 section.left{
     padding-left:20px;
