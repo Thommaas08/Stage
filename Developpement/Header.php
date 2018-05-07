@@ -11,19 +11,19 @@
          <li>
             <a href="#">Création Menu </a><!-- n2 -->
             <ul>
-               <li><a href="AddMenuClass.php">Menu Classique</a></li>
+               <li><a href="AddMenuClass.php">Menu normal</a></li>
                <!-- n3 -->
-               <li><a href="AddMenuSSEL.php">Menu Sans Sel </a></li>
+               <li><a href="AddMenuSSEL.php">Menu sans sel </a></li>
                <!-- n3 -->
-               <li><a href="AddMenuSSucre.php">Menu Sans Sucre </a></li>
+               <li><a href="AddMenuSSucre.php">Menu sans sucre </a></li>
             </ul>
          </li>
          <li>
-            <a href="#"> Commande </a><!-- n2 -->
+            <a href="#">Commande </a><!-- n2 -->
             <ul>
                <li><a href="Commande.php">Créer une Commande</a></li>
                <!-- n3 -->
-               <li><a href="#">Annuler une Commande</a></li>
+               <li><a href="#">Rechercher une Commande</a></li>
                <!-- n3 -->
             </ul>
          </li>
@@ -34,7 +34,7 @@
    <li>
       <a href="#">Bénéficiaires</a>
       <ul>
-         <li><a href="Test.php"> Créer un Bénéficiaire </a></li>
+         <li><a href="Test.php">Créer un Bénéficiaire </a></li>
          <li><a href="recherche.php">Rechercher un Bénéficiaire</a></li>
       </ul>
    </li>

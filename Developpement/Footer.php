@@ -1,6 +1,6 @@
 <footer>
 	
-  <p id="help"><a href="#">Nous aider</a></p>
+  <p id="help"><a href="#"></a></p>
 
   
 </footer>

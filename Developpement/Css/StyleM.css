@@ -50,6 +50,7 @@
    background: none;
    border: none;
    color: #666; /*écriture */
+   position: left;
    -webkit-box-shadow: none;
    -moz-box-shadow: none;
 }
