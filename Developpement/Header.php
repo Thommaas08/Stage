@@ -19,6 +19,16 @@
             </ul>
          </li>
          <li>
+            <a href="#">Recherche Menu </a><!-- n2 -->
+            <ul>
+               <li><a href="RecherMenuCl.php">Menu normal</a></li>
+               <!-- n3 -->
+               <li><a href="#">Menu sans sel </a></li>
+               <!-- n3 -->
+               <li><a href="#">Menu sans sucre </a></li>
+            </ul>
+         </li>
+         <li>
             <a href="#">Commande </a><!-- n2 -->
             <ul>
                <li><a href="Commande.php">Créer une Commande</a></li>

@@ -42,7 +42,7 @@
     $req = $bdd->query("SELECT * ,Nom,Prenom,Commune,CodePostal FROM client WHERE $requete")  ;
     while($data = $req->fetch()){
       ?>
-      <br>
+      <br><br>
       <div class="ligne">
         <section class="Text Left">
 
@@ -57,9 +57,7 @@
         <p class="InfosRefD"><?php echo ($data['Adress']); ?></p>
         <p class=""> <?php echo($data['CodePostal']) ?></p>
         <p class=""><?php echo($data['Commune']) ?></p>
-        <a href="Voir.php?numclient=<?= $data['Id']?>">Voir </a>
-        <a href="TestModif.php?numclient=<?= $data['Id']?>"> Modifier </a>
-        <a href="Supprime.php?numclient=<?= $data['Id']?>"> Supprimer</a>
+        <a href="CmdSuite2.php?numclient=<?= $data['Id']?>">Cree une commande </a>
 
       </div>
 

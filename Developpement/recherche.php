@@ -19,6 +19,8 @@
         <input class="inputText" type="text" name="Nom" value="" placeholder="Nom...">
         <label for="name">Prénom</label>
         <input class="inputText" type="text" name="Prenom" value="" placeholder="Prénom...">
+        <label for="name">Code postal</label>
+        <input class="inputText" type="text" name="CodePostal"  placeholder="Exemple: 60350">
         <label for="name">Commune</label>
         <input class="inputText" type="text" name="Commune"  placeholder="Commune">
 

@@ -13,22 +13,35 @@
 
   <form enctype="multipart/form-data" class="ADDForm" action="InsertMenuClass.php" method="post">
 
-<head>
-  <br>
-  <input class="inputText" type="text" name="NomMenu" value="" placeholder="Menu ..">
-    <input class="inputText" type="date" name="DateM"  placeholder="">
-  <input class="btnAddRef" type="submit" name="" value="AJOUTER Menu">
-  <br>
-</head>
+    <head>
+      <br>
+      <input class="inputText" type="text" name="NomMenu" value="" placeholder="Menu ..">
+      <input class="inputText" type="date" name="DateM"  placeholder="">
+      <input class="btnAddRef" type="submit" name="" value="AJOUTER Menu">
+      <br>
+    </head>
     <div class="FORMAddM">
       <section class="bloc left">
         <h1>lundi</h1>
-        <li> Potage <input type="text" name="lP" value=""></li>
-        <li>Entrée <input type="inpuText" name="lEntre1" value="">  <input type="text" name="lEntre2" value="">  <input type="text" name="lEntre3" value=""></li>
-        <li> Plat garni : Viande <input type="text" name="lviande1" value=""><input type="text" name="lviande2" value=""><br> légumes <input type="text" name="llegume1" value=""><input type="text" name="llegume2" value=""></li>
-        <li> Assiette complète <input type="text" name="LAsc" value=""></li>
-        <li> Produit laitier <input type="inpuText" name="llaitage1" value="">  <input type="text" name="llaitage2" value=""> <input type="text" name="llaitage3" value=""></li>
-        <li>Dessert <input type="inpuText" name="ldessert1" value="">  <input type="text" name="ldessert2" value="">  <input type="text" name="ldessert3" value=""></li>
+        <li> Potage
+          <p><input type="text" name="lP" value=""></p>
+        </li>
+        <li>Entrée <p><input type="inpuText" name="lEntre1" value="">
+          <input type="text" name="lEntre2" value="">
+
+            <input type="text" name="lEntre3" value="">
+          </p>
+        </li>
+        <li> Plat garni : Viande
+            <p><input type="text" name="lviande1" value="">
+          <input type="text" name="lviande2" value=""></p>
+           légumes
+          <p><input type="text" name="llegume1" value="">
+        <input type="text" name="llegume2" value=""></p>
+        </li>
+        <li> Assiette complète <p><input type="text" name="LAsc" value=""></p></li>
+        <li> Produit laitier<p> <input type="inpuText" name="llaitage1" value="">  <input type="text" name="llaitage2" value=""> <input type="text" name="llaitage3" value=""></p></li>
+        <li>Dessert <p><input type="inpuText" name="ldessert1" value="">  <input type="text" name="ldessert2" value="">  <input type="text" name="ldessert3" value=""></p></li>
       </section>
     </div>
     <div class="FORMAddM">
@@ -76,7 +89,7 @@
         <h1>Samedi</h1>
         <li> Potage <input type="text" name="SP" value=""></li>
         <li>Entrée <input type="inpuText" name="SEntre1" value="">  <input type="text" name="SEntre2" value="">  <input type="text" name="SEntre3" value=""></li>
-        <li> Plat garni : Viande <input type="text" name="Sviande1" value=""><input type="text" name="Sviande2" value=""><br> légumes <input type="text" name="Slegume1" value=""><input type="text" name="Slegume3" value=""></li>
+        <li> Plat garni : Viande <input type="text" name="Sviande1" value=""><input type="text" name="Sviande2" value=""><br> légumes <input type="text" name="Slegume1" value=""><input type="text" name="Slegume2" value=""></li>
         <li> Assiette complète <input type="text" name="SAsc" value=""></li>
         <li> Produit laitier <input type="inpuText" name="Slaitage1" value="">  <input type="text" name="Slaitage2" value="">  <input type="text" name="Slaitage3" value=""></li>
         <li>Dessert <input type="inpuText" name="Sdessert1" value="">  <input type="text" name="Sdessert2" value="">  <input type="text" name="Sdessert3" value=""></li>
@@ -93,7 +106,7 @@
       </section>
     </div>
     <input class="btnAddRef" type="submit" name="" value="AJOUTER Menu">
-</form>
+  </form>
 
 </body>
 </html>

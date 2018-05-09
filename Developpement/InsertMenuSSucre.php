@@ -1,36 +1,74 @@
 <?php
 require 'ConnexionBDD.php';
 session_start();
-            $nouveau_nom=$nouveau_nom.'.'.$extension_upload;
             //Requete de l'insertion menu classique
-            $test = $bdd->exec("INSERT INTO MenuNormal (ID_Menu, Nom_Menu,
-              LP, LE1, LV1, LLE1, LASC, LLAIT1, LDES1,
-              MP, ME1, MV1,  MLE1, MASC, MLAIT1, MDES1,
-              MEP, MEE1,  MEV1, MELE1, MEASC,
-              JP, JE1, JV1, JLE1, JASC, JLAIT, JDES1,
-              VP, VE1, VV1, VLE1, VASC, VLAIT1, VDES1,
-              SP, SE1, SV1, SLE1, SASC, SLAIT1,  SDES1,
-              DP, DE1, DV1, DLE1, DASC, DLAIT1,  DDES1,
-              MELAIT1, MEDES1)
-              VALUES (NULL, '".$_POST['NomMenu']."',
-                '".$_POST['lP']."','".$_POST['lEntre1']."','".$_POST['lviande1']."', '".$_POST['llegume1']."',
-                '".$_POST['LAsc']."', '".$_POST['llaitage1']."','".$_POST['ldessert1']."',
-                 '".$_POST['Mp']."','".$_POST['MEntre1']."','".$_POST['Mviande1']."', '".$_POST['Mlegume1']."',
-                 '".$_POST['MAsc']."', '".$_POST['Mlaitage1']."','".$_POST['Mdessert1']."',
-                 '".$_POST['MerP']."','".$_POST['MerEntre1']."', '".$_POST['Merviande1']."','".$_POST['Merlegume1']."',
-                 '".$_POST['MerAsc']."',
-                 '".$_POST['Jp']."','".$_POST['JeuEntre1']."','".$_POST['Jeuviande1']."','".$_POST['Jeulegume1']."',
-                 '".$_POST['JeuAsc']."', '".$_POST['Jeulaitage1']."', '".$_POST['Jeudessert1']."',
-                 '".$_POST['VP']."','".$_POST['VEntre1']."','".$_POST['Vviande1']."','".$_POST['Vlegume1']."',
-                 '".$_POST['VAsc']."', '".$_POST['Vlaitage1']."', '".$_POST['Vdessert1']."',
-                 '".$_POST['SP']."','".$_POST['SEntre1']."','".$_POST['Sviande1']."', '".$_POST['Slegume1']."',
-                 '".$_POST['SAsc']."', '".$_POST['Slaitage1']."', '".$_POST['Sdessert1']."',
-                 '".$_POST['DP']."','".$_POST['DEntre1']."', '".$_POST['Dviande1']."', '".$_POST['Dlegume1']."',
-                 '".$_POST['DAsc']."', '".$_POST['Dlaitage1']."','".$_POST['Ddessert1']."',
-                 ,'".$_POST['Merlaitage1']."', '".$_POST['Merdessert1']."')");
-            echo ("L'envoi a bien été effectué !");
+            $req = $bdd->prepare('INSERT INTO menussucre(Nom_M,Date_M,LundiPotage,LundiEntree1,LundiViande1,LundiLegume1,LundiLaitier1,LundiDess1,
+              MardiPotage,MardiEntree1,MardiViande1,MardiLegume1,MardiLaitier1,MardiDess1,
+            MercrediP,MercrediEntree1,MercrediViande1,MercrediLegume1,MercrediLaitier1,MercrediDess1,
+            JeudiP,JeudiEntree1,JeudiViande1,JeudiLegume1,JeudiLaitier1,JeudiDess1,
+            VendrediP,VendrediEntree1,VendrediViande1,VendrediLegume1,VendrediLaitier1,VendrediDess1,
+            SamediP,SamediEntree1,SamediViande1,SamediLegume1,SamediLaitier1,SamediDess1,
+            DimancheP,DimancheEntree1,DimancheViande1,DimancheLegume1,DimancheLaitier1,DimancheDess1)
+            VALUES (:Nom_M,:Date_M,:LundiPotage,:LundiEntree1,:LundiViande1,:LundiLegume1,:LundiLaitier1,:LundiDess1,
+            :MardiPotage,:MardiEntree1,:MardiViande1,:MardiLegume1,:MardiLaitier1,:MardiDess1,
+            :MercrediP,:MercrediEntree1,:MercrediViande1,:MercrediLegume1,:MercrediLaitier1,:MercrediDess1,
+            :JeudiP,:JeudiEntree1,:JeudiViande1,:JeudiLegume1,:JeudiLaitier1,:JeudiDess1,
+            :VendrediP,:VendrediEntree1,:VendrediViande1,:VendrediLegume1,:VendrediLaitier1,:VendrediDess1,
+            :SamediP,:SamediEntree1,:SamediViande1,:SamediLegume1,:SamediLaitier1,:SamediDess1,
+            :DimancheP,:DimancheEntree1,:DimancheViande1,:DimancheLegume1,:DimancheLaitier1,:DimancheDess1)');
+
+            $req->execute(array(
+              "Nom_M"=>$_POST['NomMenu'],
+              "Date_M"=>$_POST['DateM'],
+              "LundiPotage"=>$_POST['lP'],
+              "LundiEntree1"=>$_POST['lEntre1'],
+              "LundiViande1"=>$_POST['lviande1'],
+              "LundiLegume1"=>$_POST['llegume1'],
+              "LundiLaitier1"=>$_POST['llaitage1'],
+              "LundiDess1"=>$_POST['ldessert1'],
+              "MardiPotage"=>$_POST['Mp'],
+              "MardiEntree1"=>$_POST['MEntre1'],
+              "MardiViande1"=>$_POST['Mviande1'],
+              "MardiLegume1"=>$_POST['Mlegume1'],
+              "MardiLaitier1"=>$_POST['Mlaitage1'],
+              "MardiDess1"=>$_POST['Mdessert1'],
+              "MercrediP"=>$_POST['MerP'],
+              "MercrediEntree1"=>$_POST['MerEntre1'],
+              "MercrediViande1"=>$_POST['Merviande1'],
+              "MercrediLegume1"=>$_POST['Merlegume1'],
+              "MercrediLaitier1"=>$_POST['Merlaitage1'],
+              "MercrediDess1"=>$_POST['Merdessert1'],
+              "JeudiP"=>$_POST['Jp'],
+              "JeudiEntree1"=>$_POST['JeuEntre1'],
+              "JeudiViande1"=>$_POST['Jeuviande1'],
+              "JeudiLegume1"=>$_POST['Jeulegume1'],
+              "JeudiLaitier1"=>$_POST['Jeulaitage1'],
+              "JeudiDess1"=>$_POST['Jeudessert1'],
+              "VendrediP"=>$_POST['VP'],
+              "VendrediEntree1"=>$_POST['VEntre1'],
+              "VendrediViande1"=>$_POST['Vviande1'],
+              "VendrediLegume1"=>$_POST['Vlegume1'],
+              "VendrediLaitier1"=>$_POST['Vlaitage1'],
+              "VendrediDess1"=>$_POST['Vdessert1'],
+              "SamediP"=>$_POST['SP'],
+              "SamediEntree1"=>$_POST['SEntre1'],
+              "SamediViande1"=>$_POST['Sviande1'],
+              "SamediLegume1"=>$_POST['Slegume1'],
+              "SamediLaitier1"=>$_POST['Slaitage1'],
+              "SamediDess1"=>$_POST['Sdessert1'],
+              "DimancheP"=>$_POST['DP'],
+              "DimancheEntree1"=>$_POST['DEntre1'],
+              "DimancheViande1"=>$_POST['Dviande1'],
+              "DimancheLegume1"=>$_POST['Dlegume1'],
+              "DimancheLaitier1"=>$_POST['Dlaitage1'],
+              "DimancheDess1"=>$_POST['Ddessert1']
 
 
-header("Location: index.php ");
+
+              ));
+            // echo ("L'envoi a bien été effectué !");
+//,,,,,,
+// header("Location: index.php ");
+ print_r($req);
 
 ?>

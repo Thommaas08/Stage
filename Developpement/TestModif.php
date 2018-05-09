@@ -26,8 +26,7 @@ $client = $pdoStat ->fetch();
         <h1>Informations Bénéficiaire</h1>
         <input type="hidden" name="Id" value="<?= $client['Id']  ?>">
         <label for="name">Civilité</label>
-        <input type="radio" name="mon_champ" value="Monsieur"/> Monsieur
-        <input type="radio" name="mon_champ" value="Madame"/> Madame
+        <input class="inputText" type="text" name="Civi"  value="<?= $client['Civi'] ?>">
 
         <label for="name">Nom</label>
         <input class="inputText" type="text" name="Nom"  value="<?= $client['Nom'] ?>">
@@ -36,14 +35,14 @@ $client = $pdoStat ->fetch();
 
         <label for="name">Adresse</label>
         <input class="inputText" type="text" name="Adresse"  value="<?= $client['Adress'] ?>">
+        <label for="name">Adresse complémentaire</label>
+        <input class="inputText" type="text" name="AdressComp"  value="<?= $client['AdressComp'] ?>">
+        <label for="name">Code postal</label>
+        <input class="inputText" type="text" name="CodePostal"  value="<?= $client['CodePostal'] ?>">
 
         <label for="name">Commune</label>
         <input class="inputText" type="text" name="Commune"  value="<?= $client['Commune'] ?>">
 
-        <!-- <label for="name">Regime</label>
-        <input type="radio" name="mon_Menu" />Normal
-        <input type="radio" name="mon_Menu" />Sans Sel
-        <input type="radio" name="mon_Menu" />Sans Sucre -->
         <label for="name">Régime</label>
         <input class="inputText" type="text" name="Regime"  value="<?= $client['Regime'] ?>">
 
@@ -63,11 +62,17 @@ $client = $pdoStat ->fetch();
 
         <label for="name">Personne a contacter</label>
         <input class="inputText" type="text" name="Contact"  value="<?= $client['Contact'] ?>">
+        <label for="name">Prénom</label>
+        <input class="inputText" type="text" name="ContactPre"  value="<?= $client['ContactPre'] ?>">
+        <label for="name">Lien parenté</label>
+        <input class="inputText" type="text" name="LienParent"  value="<?= $client['LienParent'] ?>">
         <label for="name">Numéro de téléphone </label>
         <input class="inputText" type="text" name="TelContact"  value="<?= $client['TelContact'] ?>">
+        <label for="name">Adresse mail </label>
+        <input class="inputText" type="text" name="ContactMail"  value="<?= $client['ContactMail'] ?>">
         <br>
 
-        <input class="btnAddRef" type="submit" name="" value="Enregistrer Modifications">
+        <input class="btnAddRef" type="submit" name="" value="Enregistrer ">
 
       </form>
     </body>
