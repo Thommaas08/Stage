@@ -36,15 +36,21 @@ $client = $pdoStat ->fetch();
       </section>
       <select name="Menu" id="Menu">
                 <?php require 'ConnexionBDD.php';
-                if($client['Regime']="Normal"){
-                  $req = $bdd->query('SELECT * FROM menuclassique');
-                }
-                if ($client['Regime']="Sans Sel") {
-                  $req = $bdd->query('SELECT * FROM menussel');
-                }
-                if ($client['Regime']="Sans Sucre") {
-                  $req = $bdd->query('SELECT * FROM menussucre');
-                }
+                if($client['Regime']=="Normal"){
+                   $req = $bdd->query('SELECT * FROM menuclassique');
+                }  elseif ($client['Regime']=="Sans Sel") {
+                    $req = $bdd->query('SELECT * FROM menussel');
+                  } elseif ($client['Regime']=="Sans Sucre") {
+                    $req = $bdd->query('SELECT * FROM menussucre');
+                  }
+
+
+            if (condition) {
+              // code...
+            } else {
+              // code...
+            }
+
 
 
                 while ($data = $req->fetch())
@@ -63,3 +69,4 @@ $client = $pdoStat ->fetch();
       </form>
     </body>
     </html>
+    
