@@ -11,7 +11,7 @@ $client = $pdoStat ->fetch();
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>Renseigment</title>
+  <title>Commande</title>
   <link rel="stylesheet" type="text/css" href="css/reboot.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -19,54 +19,62 @@ $client = $pdoStat ->fetch();
   <?php include 'Header.php'?>
   <div class="FORMAdd">
     <!-- Formulaire HTML pour ajouter un client -->
-    <form >
+    <form enctype="multipart/form-data" class="ADDForm" action="#" method="POST" >
 
       <section class="bloc left">
         <h1>Informations Bénéficiaire</h1>
         <input type="hidden" name="Id" value="<?= $client['Id']  ?>">
-      <p><label for="name"><?= $client['Civi'] ?>  <?= $client['Nom'] ?> <?= $client['Prenom'] ?> </label></p>
-          <p>
-             <label for="name"><?= $client['Adress'] ?>  <?= $client['AdressComp'] ?></label>
-             <label for="name"><?= $client['CodePostal'] ?>  <?= $client['Commune'] ?></label>
-           </p>
-         <p>
-           <label for="name"><?= $client['Regime'] ?></label>
+        <p><label for="name"><?= $client['Civi'] ?>  <?= $client['Nom'] ?> <?= $client['Prenom'] ?> </label></p>
+        <p>
+          <label for="name"><?= $client['Adress'] ?>  <?= $client['AdressComp'] ?></label>
+          <label for="name"><?= $client['CodePostal'] ?>  <?= $client['Commune'] ?></label>
+        </p>
+        <p>
+          <label for="name"><?= $client['Regime'] ?></label>
 
-         </p>
+        </p>
       </section>
-      <select name="Menu" id="Menu">
-                <?php require 'ConnexionBDD.php';
-                if($client['Regime']=="Normal"){
-                   $req = $bdd->query('SELECT * FROM menuclassique');
-                }  elseif ($client['Regime']=="Sans Sel") {
-                    $req = $bdd->query('SELECT * FROM menussel');
-                  } elseif ($client['Regime']=="Sans Sucre") {
-                    $req = $bdd->query('SELECT * FROM menussucre');
-                  }
+      <section class="bloc Right">
+        <h1>Choix Menu</h1>
 
 
-            if (condition) {
-              // code...
-            } else {
-              // code...
+        <?php
+        //Affichage des menu
+        try {
+          if($client['Regime']=="Normal"){
+            $req = $bdd->query('SELECT Id,Nom_M,Date_M FROM menuclassique order by Date_M desc');
+          }  elseif ($client['Regime']=="Sans Sel") {
+            $req = $bdd->query('SELECT Id,Nom_M,Date_M FROM menussel order by Date_M desc');
+          } elseif ($client['Regime']=="Sans Sucre") {
+            $req = $bdd->query('SELECT Id,Nom_M,Date_M FROM menussucre order by Date_M desc');
+          };
+          while($data = $req->fetch()){
+            ?>
+            <br>
+
+            <section class="Text right">
+
+
+              <div class="InfosRefD">
+                <p><?php echo($data['Nom_M']); ?>--<?php echo ($data['Date_M']); ?>    <a href="CmdSuite3.php?numMenu=<?= $data['Id']?>& numclient=<?= $client['Id']?>">Suite</a></p>
+
+              </div>
+
+            </section>
+
+              <?php
             }
 
+          }
 
+          catch (PDOException $e) {
+            echo 'Échec : ' . $e->getMessage();
+          }
 
-                while ($data = $req->fetch())
-                {
-                  ?>
-                  <option> <?php echo $data['Nom_M'] ?> </option>
-                  <?php
-                }
+          $req->closeCursor(); //Ferme le curseur du fetch()
+          ?>
 
-                $req->closeCursor();
-
-                ?>
-              </select>
-
-
+        </section>
       </form>
     </body>
     </html>
-    

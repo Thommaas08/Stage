@@ -29,7 +29,7 @@
   $requete = substr($requete,0,-4);
   ?>
   <?php
-  //Affichage des Bénéficiaire
+  //Affichage des menu
   try {
     $req = $bdd->query("SELECT * ,Nom_M,Date_M FROM menuclassique WHERE $requete")  ;
     while($data = $req->fetch()){
@@ -47,7 +47,7 @@
         </section>
 
 
-        <a href="Voir.php?numclient=<?= $data['Id']?>">Voir </a>
+        <a href="VoirMenuClassique.php?numMenu=<?= $data['Id']?>">Voir </a>
         <a href="TestModif.php?numclient=<?= $data['Id']?>"> Modifier </a>
         <a href="Supprime.php?numclient=<?= $data['Id']?>"> Supprimer</a>
 
