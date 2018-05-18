@@ -1,8 +1,11 @@
+<?php
+header('Content-type: text/html; charset=UTF-8');
+?>
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Créer un Menu</title>
+  <title>Créat° Menu Sans Sucre</title>
   <link rel="stylesheet" type="text/css" href="css/reboot.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">

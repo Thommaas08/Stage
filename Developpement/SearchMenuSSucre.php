@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Recherche Bénéficiaire</title>
+  <title>Reche Sans sel</title>
   <link rel="stylesheet" type="text/css" href="css/reboot.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -31,7 +31,7 @@
   <?php
   //Affichage des menu
   try {
-    $req = $bdd->query("SELECT * ,Nom_M,Date_M FROM menuclassique WHERE $requete")  ;
+    $req = $bdd->query("SELECT * ,Nom_M,Date_M FROM menussucre WHERE $requete")  ;
     while($data = $req->fetch()){
       ?>
       <br>
@@ -47,9 +47,9 @@
         </section>
 
 
-        <a href="VoirMenuClassique.php?numMenu=<?= $data['Id']?>">Voir </a>
-        <a href="ModifMenuCl.php?numclient=<?= $data['Id']?>"> Modifier </a>
-        <a href="SupMenuCl.php?numclient=<?= $data['Id']?>"> Supprimer</a>
+        <a href="VoirMenuSSel.php?numMenu=<?= $data['Id']?>">Voir </a>
+        <a href="TestModif.php?numclient=<?= $data['Id']?>"> Modifier </a>
+        <a href="Supprime.php?numclient=<?= $data['Id']?>"> Supprimer</a>
 
       </div>
 
@@ -66,7 +66,7 @@
   ?>
   <br>
   <form class="" action="RecherMenuCl.php" method="post">
-    <input class="btnAddRef" type="submit" name="" value="RECHERCHER Bénéficiaire">
+    <input class="btnAddRef" type="submit" name="" value="RECHERCHER ">
   </form>
 </body>
 </html>

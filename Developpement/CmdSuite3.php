@@ -49,7 +49,7 @@ $Bene = $pdoStat ->fetch();
 
          <h1>lundi</h1>
            <li> Potage
-             <p><input type="radio" name="mon_champ" value="<?= $client['LundiPotage'] ?>"> <?= $client['LundiPotage'] ?>  <input type="radio" name="mon_champ" value=""> ne prend rien
+             <p><input type="radio" name="mon_champ" value="<?= $client['LundiPotage'] ?>"> <?= $client['LundiPotage'] ?>
              </p>
 
            </li>
@@ -58,55 +58,53 @@ $Bene = $pdoStat ->fetch();
                <input type="radio" name="mon_champ1" value="<?= $client['LundiEntree1'] ?>"><?= $client['LundiEntree1'] ?>
                <input type="radio" name="mon_champ1" value="<?= $client['LundiEntree2'] ?>"><?= $client['LundiEntree2'] ?>
                <input type="radio" name="mon_champ1" value="<?= $client['LundiEntree3'] ?>"><?= $client['LundiEntree3'] ?>
-               <input type="radio" name="mon_champ1" value=""> ne prend rien
              </p>
            </li>
-           <li> Plat garni : Viande
-               <p><input type="radio" name="Viande1" value="<?= $client['LundiViande1'] ?>"><?= $client['LundiViande1'] ?>
-             <input type="radio" name="Viande1" value="<?= $client['LundiViande2'] ?>"><?= $client['LundiViande2'] ?>
-           <input type="radio" name="Viande1" value=""> ne prend rien</p>
-              légumes
-             <p><input type="radio" name="legume1" value="<?= $client['LundiLegume1'] ?>"><?= $client['LundiLegume1'] ?>
+           <li> Plat garni <p>Viande
+               <input type="radio" name="Viande1" value="<?= $client['LundiViande1'] ?>"><?= $client['LundiViande1'] ?>
+             <input type="radio" name="Viande1" value="<?= $client['LundiViande2'] ?>"><?= $client['LundiViande2'] ?></p>
+
+
+             <p>légumes<input type="radio" name="legume1" value="<?= $client['LundiLegume1'] ?>"><?= $client['LundiLegume1'] ?>
            <input type="radio" name="legume1" value="<?= $client['LundiLegume2'] ?>"><?= $client['LundiLegume2'] ?>
-         <input type="radio" name="legume1" value=""> ne prend rien</p>
            </li>
            <li> Assiette complète <p><input type="radio" name="LAsc" value="<?= $client['LundiAss'] ?>"><?= $client['LundiAss'] ?> <input type="radio" name="LAsc" value=""> ne prend rien</p></li>
            <li> Produit laitier<p> <input type="radio" name="llaitage1" value="<?= $client['LundiLegume2'] ?>"><?= $client['LundiLegume2'] ?>  <input type="radio" name="llaitage1" value="<?= $client['LundiLegume2'] ?>"><?= $client['LundiLegume2'] ?>
-             <input type="radio" name="llaitage1" value="<?= $client['LundiLegume2'] ?>"><?= $client['LundiLegume2'] ?><input type="radio" name="legume1" value=""> ne prend rien</p></p></li>
+             <input type="radio" name="llaitage1" value="<?= $client['LundiLegume2'] ?>"><?= $client['LundiLegume2'] ?></p></p></li>
            <li>Dessert <p><input type="radio" name="ldessert" value="<?= $client['LundiDess1'] ?>"><?= $client['LundiDess1'] ?>  <input type="radio" name="ldessert" value="<?= $client['LundiDess2'] ?>"><?= $client['LundiDess2'] ?>
-             <input type="radio" name="ldessert" value="<?= $client['LundiDess3'] ?>"><?= $client['LundiDess3'] ?><input type="radio" name="ldessert" value=""> ne prend rien</p></p></li>
+             <input type="radio" name="ldessert" value="<?= $client['LundiDess3'] ?>"><?= $client['LundiDess3'] ?></p></li>
          </section>
 
        </div>
        <div class="FORMAddM">
          <section class="bloc right">
            <h1>Mardi</h1>
-           <li> Potage <input type="radio" name="Mp" value="<?= $client['MardiPotage'] ?>"><?= $client['MardiPotage'] ?><input type="radio" name="Mp" value=""> ne prend rien</li>
+           <li> Potage <input type="radio" name="Mp" value="<?= $client['MardiPotage'] ?>"><?= $client['MardiPotage'] ?>
            <li>Entrée <input type="radio" name="MEntre" value="<?= $client['MardiEntree1'] ?>"><?= $client['MardiEntree1'] ?>  <input type="radio" name="MEntre" value="<?= $client['MardiEntree2'] ?>"> <?= $client['MardiEntree2'] ?>
-              <input type="radio" name="MEntre" value="<?= $client['MardiEntree3'] ?>"><?= $client['MardiEntree3'] ?><input type="radio" name="MEntre" value=""> ne prend rien</li>
+              <input type="radio" name="MEntre" value="<?= $client['MardiEntree3'] ?>"><?= $client['MardiEntree3'] ?>
            <li> Plat garni : Viande <input type="radio" name="Mviande1" value="<?= $client['MardiViande1'] ?>"><?= $client['MardiViande1'] ?><input type="radio" name="Mviande1" value="<?= $client['MardiViande2'] ?>"><?= $client['MardiViande2'] ?>
-             <input type="radio" name="Mviande1" value=""> ne prend rien<br> légumes <input type="radio" name="Mlegume" value="<?= $client['MardiLegume1'] ?>"><?= $client['MardiLegume1'] ?><input type="radio" name="Mlegume" value="<?= $client['MardiLegume2'] ?>">
-             <?= $client['MardiLegume2'] ?><input type="radio" name="Mlegume" value=""> ne prend rien</li>
+              <br>légumes <input type="radio" name="Mlegume" value="<?= $client['MardiLegume1'] ?>"><?= $client['MardiLegume1'] ?><input type="radio" name="Mlegume" value="<?= $client['MardiLegume2'] ?>">
+             <?= $client['MardiLegume2'] ?>
            <li> Assiette complète <input type="radio" name="MAsc" value="<?= $client['MardiAss'] ?>"><?= $client['MardiAss'] ?><input type="radio" name="MAsc" value=""> ne prend rien</li>
            <li> Produit laitier <input type="radio" name="Mlaitage" value="<?= $client['MardiLaitier1'] ?>"><?= $client['MardiLaitier1'] ?>  <input type="radio" name="Mlaitage" value="<?= $client['MardiLaitier2'] ?>"><?= $client['MardiLaitier2'] ?>
-               <input type="radio" name="Mlaitage" value="<?= $client['MardiLaitier3'] ?>"><?= $client['MardiLaitier3'] ?><input type="radio" name="Mlaitage" value=""> ne prend rien</li></li>
+               <input type="radio" name="Mlaitage" value="<?= $client['MardiLaitier3'] ?>"><?= $client['MardiLaitier3'] ?></li></li>
            <li>Dessert <input type="radio" name="Mdessert" value="<?= $client['MardiDess1'] ?>"><?= $client['MardiDess1'] ?>  <input type="radio" name="Mdessert" value="<?= $client['MardiDess2'] ?>"><?= $client['MardiDess3'] ?>
-               <input type="radio" name="Mdessert" value="<?= $client['MardiDess3'] ?>"><?= $client['MardiDess3'] ?><input type="radio" name="Mdessert" value=""> ne prend rien</li></li>
+               <input type="radio" name="Mdessert" value="<?= $client['MardiDess3'] ?>"><?= $client['MardiDess3'] ?></li></li>
          </section>
        </div><div class="FORMAddM">
          <section class="bloc left">
            <h1>Mercredi</h1>
-           <li> Potage <input type="radio" name="MerP" value="<?= $client['MercrediP'] ?>"><?= $client['MercrediP'] ?><input type="radio" name="MerP" value=""> ne prend rien</li>
+           <li> Potage <input type="radio" name="MerP" value="<?= $client['MercrediP'] ?>"><?= $client['MercrediP'] ?></li>
            <li>Entrée <input type="radio" name="MerEntre" value="<?= $client['MercrediEntree1'] ?>"><?= $client['MercrediEntree1'] ?>  <input type="radio" name="MerEntre" value="<?= $client['MercrediEntree2'] ?>"><?= $client['MercrediEntree2'] ?>
-               <input type="radio" name="MerEntre" value="<?= $client['MercrediEntree3'] ?>"><?= $client['MercrediEntree3'] ?><input type="radio" name="MerEntre" value=""> ne prend rien</li>
+               <input type="radio" name="MerEntre" value="<?= $client['MercrediEntree3'] ?>"><?= $client['MercrediEntree3'] ?></li>
            <li> Plat garni : Viande <input type="radio" name="Merviande" value="<?= $client['MercrediViande1'] ?>"><?= $client['MercrediViande1'] ?><input type="radio" name="Merviande" value="<?= $client['MercrediViande2'] ?>"><?= $client['MercrediLaitier3'] ?>
-             <input type="radio" name="Merviande" value=""> ne prend rien<br> légumes <input type="radio" name="Merlegume1" value="<?= $client['MercrediLegume1'] ?>"><?= $client['MercrediLegume1'] ?><input type="radio" name="Merlegume1" value="<?= $client['MercrediViande2'] ?>">
-             <?= $client['MercrediLegume2'] ?><input type="radio" name="Merlegume1" value=""> ne prend rien</li>
+             <br> légumes <input type="radio" name="Merlegume1" value="<?= $client['MercrediLegume1'] ?>"><?= $client['MercrediLegume1'] ?><input type="radio" name="Merlegume1" value="<?= $client['MercrediViande2'] ?>">
+             <?= $client['MercrediLegume2'] ?></li>
            <li> Assiette complète <input type="radio" name="MerAsc" value="<?= $client['MercrediAss'] ?>"><?= $client['MercrediAss'] ?><input type="radio" name="MerAsc" value=""> ne prend rien</li>
            <li> Produit laitier <input type="radio" name="Merlaitage" value="<?= $client['MercrediLaitier1'] ?>"><?= $client['MercrediLaitier1'] ?> <input type="radio" name="Merlaitage" value="<?= $client['MercrediLaitier2'] ?>"><?= $client['MercrediLaitier2'] ?>
-              <input type="radio" name="Merlaitage" value="<?= $client['MercrediLaitier3'] ?>"><?= $client['MercrediLaitier3'] ?><input type="radio" name="Merlaitage" value=""> ne prend rien</li>
+              <input type="radio" name="Merlaitage" value="<?= $client['MercrediLaitier3'] ?>"><?= $client['MercrediLaitier3'] ?></li>
            <li>Dessert <input type="radio" name="Merdessert" value="<?= $client['MercrediDess1'] ?>"><?= $client['MercrediDess1'] ?>  <input type="radio" name="Merdessert" value="<?= $client['MercrediDess2'] ?>"><?= $client['MercrediDess2'] ?>
-              <input type="radio" name="Merdessert" value="<?= $client['MercrediDess3'] ?>"><?= $client['MercrediDess3'] ?><input type="radio" name="Merdessert" value=""> ne prend rien</li>
+              <input type="radio" name="Merdessert" value="<?= $client['MercrediDess3'] ?>"><?= $client['MercrediDess3'] ?></li>
          </section>
        </div><div class="FORMAddM">
          <section class="bloc left">

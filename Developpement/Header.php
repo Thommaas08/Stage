@@ -23,9 +23,9 @@
             <ul>
                <li><a href="RecherMenuCl.php">Menu normal</a></li>
                <!-- n3 -->
-               <li><a href="#">Menu sans sel </a></li>
+               <li><a href="RecherMenuSSel.php">Menu sans sel </a></li>
                <!-- n3 -->
-               <li><a href="#">Menu sans sucre </a></li>
+               <li><a href="RecherMenuSSucre.php">Menu sans sucre </a></li>
             </ul>
          </li>
          <li>

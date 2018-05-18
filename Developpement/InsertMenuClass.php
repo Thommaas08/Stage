@@ -2,7 +2,7 @@
 require 'ConnexionBDD.php';
 session_start();
             //Requete de l'insertion menu classique
-            $req = $bdd->prepare('INSERT INTO menuClassique(Nom_M,Date_M,LundiPotage,LundiEntree1,LundiEntree2,LundiEntree3,LundiViande1,LundiViande2,LundiLegume1,LundiLegume2,LundiAss,LundiLaitier1,LundiLaitier2,LundiLaitier3,LundiDess1,LundiDess2,LundiDess3,
+            $req = $bdd->prepare('INSERT INTO menuclassique(Nom_M,Date_M,LundiPotage,LundiEntree1,LundiEntree2,LundiEntree3,LundiViande1,LundiViande2,LundiLegume1,LundiLegume2,LundiAss,LundiLaitier1,LundiLaitier2,LundiLaitier3,LundiDess1,LundiDess2,LundiDess3,
               MardiPotage,MardiEntree1,MardiEntree2,MardiEntree3,MardiViande1,MardiViande2,MardiLegume1,MardiLegume2,MardiAss,MardiLaitier1,MardiLaitier2,MardiLaitier3,MardiDess1,MardiDess2,MardiDess3,
             MercrediP,MercrediEntree1,MercrediEntree2,MercrediEntree3,MercrediViande1,MercrediViande2,MercrediLegume1,MercrediLegume2,MercrediAss,MercrediLaitier1,MercrediLaitier2,MercrediLaitier3,MercrediDess1,MercrediDess2,MercrediDess3,
             JeudiP,JeudiEntree1,JeudiEntree2,JeudiEntree3,JeudiViande1,JeudiViande2,JeudiLegume1,JeudiLegume2,JeudiAss,JeudiLaitier1,JeudiLaitier2,JeudiLaitier3,JeudiDess1,JeudiDess2,JeudiDess3,

@@ -10,9 +10,9 @@
 <body>
   <?php include 'header.php' ?>
   <div class="FORMAdd">
-    <form enctype="multipart/form-data" class="ADDForm" action="SearchMenuCl.php" method="post">
+    <form enctype="multipart/form-data" class="ADDForm" action="SearchMenuSSel.php" method="post">
       <section class="bloc center">
-          <h2>Recherche menu classique</h2>
+          <h2>Recherche menu sans sel</h2>
 
         <label for="name">Nom menu</label>
         <input class="inputText" type="text" name="NomMenu" value="" placeholder="Nom...">

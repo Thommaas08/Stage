@@ -1,14 +1,14 @@
 <?php
 require 'ConnexionBDD.php';
-$req=$bdd->prepare("DELETE FROM client WHERE Id = :num limit 1");
+$req=$bdd->prepare("DELETE FROM menuclassique WHERE Id = :num limit 1");
 $req -> bindValue(':num',$_GET['numclient'],PDO::PARAM_INT);
 $executeIsOk = $req->execute();
 if ($executeIsOk) {
-  $message= 'le contact a été supprimer';
+  $message= 'Le menu a bien a été supprimer';
 
 }
 else {
-  $message="Echec de la suppression du Bénéficiaire";
+  $message="Echec de la suppression du menu";
   // code...
 }
 
