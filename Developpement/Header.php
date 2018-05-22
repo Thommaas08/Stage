@@ -6,7 +6,7 @@
    <li class="current"><a href="index.php">Accueil</a></li>
    <!-- n1 -->
    <li>
-      <a href="#">Administration</a><!-- n1 -->
+      <a href="#">Menu</a><!-- n1 -->
       <ul>
          <li>
             <a href="#">Création Menu </a><!-- n2 -->
@@ -28,17 +28,15 @@
                <li><a href="RecherMenuSSucre.php">Menu sans sucre </a></li>
             </ul>
          </li>
-         <li>
-            <a href="#">Commande </a><!-- n2 -->
-            <ul>
-               <li><a href="Commande.php">Créer une Commande</a></li>
-               <!-- n3 -->
-               <li><a href="#">Rechercher une Commande</a></li>
-               <!-- n3 -->
-            </ul>
-         </li>
          <li><a href="#">Feuille de route</a></li>
          <!-- n2 -->
+      </ul>
+   </li>
+   <li>
+      <a href="#">Commande</a>
+      <ul>
+         <li><a href="Commande.php"> Créer une Commande </a></li>
+         <li><a href="#">Rechercher une Commande</a></li>
       </ul>
    </li>
    <li>

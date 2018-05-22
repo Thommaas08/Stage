@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Reche Sans sel</title>
+  <title>Reche Sans sucre</title>
   <link rel="stylesheet" type="text/css" href="css/reboot.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -23,7 +23,7 @@
     $requete = "$requete"."Nom_M like '".$Nom."%' AND ";
   }
   if($date!=NULL){
-    $requete = $requete."Date_M like '%".$CodeP."%' AND ";
+    $requete = $requete."Date_M like '%".$date."%' AND ";
   }
 
   $requete = substr($requete,0,-4);
@@ -46,10 +46,9 @@
 
         </section>
 
-
-        <a href="VoirMenuSSel.php?numMenu=<?= $data['Id']?>">Voir </a>
+        <a href="VoirMenuSSucre.php?numMenu=<?= $data['Id']?>">Voir </a>
         <a href="TestModif.php?numclient=<?= $data['Id']?>"> Modifier </a>
-        <a href="Supprime.php?numclient=<?= $data['Id']?>"> Supprimer</a>
+        <a href="SupMenuSSucre.php?numclient=<?= $data['Id']?>"> Supprimer</a>
 
       </div>
 
@@ -65,7 +64,7 @@
   $req->closeCursor(); //Ferme le curseur du fetch()
   ?>
   <br>
-  <form class="" action="RecherMenuCl.php" method="post">
+  <form class="" action="RecherMenuSSucre.php" method="post">
     <input class="btnAddRef" type="submit" name="" value="RECHERCHER ">
   </form>
 </body>

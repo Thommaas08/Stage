@@ -23,7 +23,7 @@
     $requete = "$requete"."Nom_M like '".$Nom."%' AND ";
   }
   if($date!=NULL){
-    $requete = $requete."Date_M like '%".$CodeP."%' AND ";
+    $requete = $requete."Date_M like '%".$date."%' AND ";
   }
 
   $requete = substr($requete,0,-4);
@@ -47,9 +47,9 @@
         </section>
 
 
-        <a href="VoirMenuClassique.php?numMenu=<?= $data['Id']?>">Voir </a>
-        <a href="TestModif.php?numclient=<?= $data['Id']?>"> Modifier </a>
-        <a href="Supprime.php?numclient=<?= $data['Id']?>"> Supprimer</a>
+        <a href="VoirMenuSSel.php?numMenu=<?= $data['Id']?>">Voir </a>
+        <a href="ModifMenuSSel.php?numclient=<?= $data['Id']?>"> Modifier </a>
+        <a href="SupMenuSSel.php?numclient=<?= $data['Id']?>"> Supprimer</a>
 
       </div>
 
@@ -65,7 +65,7 @@
   $req->closeCursor(); //Ferme le curseur du fetch()
   ?>
   <br>
-  <form class="" action="RecherMenuCl.php" method="post">
+  <form class="" action="RecherMenuSSel.php" method="post">
     <input class="btnAddRef" type="submit" name="" value="RECHERCHER ">
   </form>
 </body>

@@ -25,14 +25,173 @@ $client = $pdoStat ->fetch();
         <h1>Informations Menu Classique</h1>
         <input type="hidden" name="Id" value="<?= $client ['Id']  ?>">
       <p><label for="name"> <?= $client ['Nom_M'] ?>  <?= $client['Date_M'] ?> </label></p>
-          <p>
-             <label for="name"><?= $client['LundiPotage'] ?>  <?= $client['LundiEntree1'] ?></label>
-             <label for="name"><?= $client['LundiEntree2'] ?>  <?= $client['LundiEntree3'] ?></label>
-           </p>
-         <p>
-
-         </p>
-      </section>
+      <h1>Lundi</h1>
+      <p> Potage
+        <label for="name"><?= $client['LundiPotage'] ?> </p>
+          <p>Entree <label for="name"><?= $client['LundiEntree1'] ?></label>
+            <label for="name"><?= $client['LundiEntree2'] ?></label>  <label for="name"> <?= $client['LundiEntree3'] ?></label>
+          </p>
+          <p>Viande
+            <label for="name"><?= $client['LundiViande1'] ?></label>  <label for="name"><?= $client['LundiViande2'] ?></label>
+          </p>
+          <p>Legume
+            <label for="name"><?= $client['LundiLegume1'] ?></label> <label for="name"> <?= $client['LundiLegume2'] ?></label>
+          </p>
+          <p>Assiette
+            <label for="name"><?php $client['LundiAss'] ?></label>
+          </p>
+          <p>Laitage
+            <label for="name"><?= $client['LundiLaitier1'] ?></label> <label for="name"><?= $client['LundiLaitier2'] ?></label>
+            <label for="name"><?= $client['LundiLaitier3'] ?></label>
+          </p>
+          <p>Dessert
+            <label for="name"><?= $client['LundiDess1'] ?></label> <label for="name"><?= $client['LundiDess2'] ?></label>
+          </p>
+        </section>
+        <section class="bloc right">
+          <h1>Mardi</h1>
+          <p> Potage
+            <label for="name"><?= $client['MardiPotage'] ?> </p>
+              <p>Entree <label for="name"><?= $client['MardiEntree1'] ?></label>
+                <label for="name"><?= $client['MardiEntree2'] ?></label>  <label for="name"> <?= $client['MardiEntree3'] ?></label>
+              </p>
+              <p>Viande
+                <label for="name"><?= $client['MardiViande1'] ?></label>  <label for="name"><?= $client['MardiViande2'] ?></label>
+              </p>
+              <p>Legume
+                <label for="name"><?= $client['MardiLegume1'] ?></label> <label for="name"> <?= $client['MardiLegume2'] ?></label>
+              </p>
+              <p>Assiette
+                <label for="name"><?php $client['MardiAss'] ?></label>
+              </p>
+              <p>Laitage
+                <label for="name"><?= $client['MardiLaitier1'] ?></label> <label for="name"><?= $client['MardiLaitier2'] ?></label>
+                <label for="name"><?= $client['MardiLaitier3'] ?></label>
+              </p>
+              <p>Dessert
+                <label for="name"><?= $client['MardiDess1'] ?></label> <label for="name"><?= $client['MardiDess2'] ?></label>
+              </p>
+        </section>
+        <section class="bloc left">
+          <h1>Mercredi</h1>
+          <p> Potage
+            <label for="name"><?= $client['MercrediP'] ?> </p>
+              <p>Entree <label for="name"><?= $client['MercrediEntree1'] ?></label>
+                <label for="name"><?= $client['MercrediEntree2'] ?></label>  <label for="name"> <?= $client['MercrediEntree3'] ?></label>
+              </p>
+              <p>Viande
+                <label for="name"><?= $client['MercrediViande1'] ?></label>  <label for="name"><?= $client['MercrediViande2'] ?></label>
+              </p>
+              <p>Legume
+                <label for="name"><?= $client['MercrediLegume1'] ?></label> <label for="name"> <?= $client['MercrediLegume2'] ?></label>
+              </p>
+              <p>Assiette
+                <label for="name"><?php $client['MercrediAss'] ?></label>
+              </p>
+              <p>Laitage
+                <label for="name"><?= $client['MercrediLaitier1'] ?></label> <label for="name"><?= $client['MercrediLaitier2'] ?></label>
+                <label for="name"><?= $client['MercrediLaitier3'] ?></label>
+              </p>
+              <p>Dessert
+                <label for="name"><?= $client['MercrediDess1'] ?></label> <label for="name"><?= $client['MercrediDess2'] ?></label>
+              </p>
+        </section>
+        <section class="bloc right">
+          <h1>Jeudi</h1>
+          <p> Potage
+            <label for="name"><?= $client['JeudiP'] ?> </p>
+              <p>Entree <label for="name"><?= $client['JeudiEntree1'] ?></label>
+                <label for="name"><?= $client['JeudiEntree2'] ?></label>  <label for="name"> <?= $client['JeudiEntree3'] ?></label>
+              </p>
+              <p>Viande
+                <label for="name"><?= $client['JeudiViande1'] ?></label>  <label for="name"><?= $client['JeudiViande2'] ?></label>
+              </p>
+              <p>Legume
+                <label for="name"><?= $client['JeudiLegume1'] ?></label> <label for="name"> <?= $client['JeudiLegume2'] ?></label>
+              </p>
+              <p>Assiette
+                <label for="name"><?php $client['JeudiAss'] ?></label>
+              </p>
+              <p>Laitage
+                <label for="name"><?= $client['JeudiLaitier1'] ?></label> <label for="name"><?= $client['JeudiLaitier2'] ?></label>
+                <label for="name"><?= $client['JeudiLaitier3'] ?></label>
+              </p>
+              <p>Dessert
+                <label for="name"><?= $client['JeudiDess1'] ?></label> <label for="name"><?= $client['JeudiDess2'] ?></label>
+              </p>
+        </section>
+        <section class="bloc left">
+          <h1>Vendredi</h1>
+          <p> Potage
+            <label for="name"><?= $client['VendrediP'] ?> </p>
+              <p>Entree <label for="name"><?= $client['VendrediEntree1'] ?></label>
+                <label for="name"><?= $client['VendrediEntree2'] ?></label>  <label for="name"> <?= $client['VendrediEntree3'] ?></label>
+              </p>
+              <p>Viande
+                <label for="name"><?= $client['VendrediViande1'] ?></label>  <label for="name"><?= $client['VendrediViande2'] ?></label>
+              </p>
+              <p>Legume
+                <label for="name"><?= $client['VendrediLegume1'] ?></label> <label for="name"> <?= $client['VendrediLegume2'] ?></label>
+              </p>
+              <p>Assiette
+                <label for="name"><?php $client['VendrediAss'] ?></label>
+              </p>
+              <p>Laitage
+                <label for="name"><?= $client['VendrediLaitier1'] ?></label> <label for="name"><?= $client['VendrediLaitier2'] ?></label>
+                <label for="name"><?= $client['VendrediLaitier3'] ?></label>
+              </p>
+              <p>Dessert
+                <label for="name"><?= $client['VendrediDess1'] ?></label> <label for="name"><?= $client['VendrediDess2'] ?></label>
+              </p>
+        </section>
+        <section class="bloc right">
+          <h1>Samedi</h1>
+          <p> Potage
+            <label for="name"><?= $client['SamediP'] ?> </p>
+              <p>Entree <label for="name"><?= $client['SamediEntree1'] ?></label>
+                <label for="name"><?= $client['SamediEntree2'] ?></label>  <label for="name"> <?= $client['SamediEntree3'] ?></label>
+              </p>
+              <p>Viande
+                <label for="name"><?= $client['SamediViande1'] ?></label>  <label for="name"><?= $client['SamediViande2'] ?></label>
+              </p>
+              <p>Legume
+                <label for="name"><?= $client['SamediLegume1'] ?></label> <label for="name"> <?= $client['SamediLegume2'] ?></label>
+              </p>
+              <p>Assiette
+                <label for="name"><?php $client['SamediAss'] ?></label>
+              </p>
+              <p>Laitage
+                <label for="name"><?= $client['SamediLaitier1'] ?></label> <label for="name"><?= $client['SamediLaitier2'] ?></label>
+                <label for="name"><?= $client['SamediLaitier3'] ?></label>
+              </p>
+              <p>Dessert
+                <label for="name"><?= $client['SamediDess1'] ?></label> <label for="name"><?= $client['SamediDess2'] ?></label>
+              </p>
+        </section>
+        <section class="bloc left">
+          <h1>Dimanche</h1>
+          <p> Potage
+            <label for="name"><?= $client['DimancheP'] ?> </p>
+              <p>Entree <label for="name"><?= $client['DimancheEntree1'] ?></label>
+                <label for="name"><?= $client['DimancheEntree2'] ?></label>  <label for="name"> <?= $client['DimancheEntree3'] ?></label>
+              </p>
+              <p>Viande
+                <label for="name"><?= $client['DimancheViande1'] ?></label>  <label for="name"><?= $client['DimancheViande2'] ?></label>
+              </p>
+              <p>Legume
+                <label for="name"><?= $client['DimancheLegume1'] ?></label> <label for="name"> <?= $client['DimancheLegume2'] ?></label>
+              </p>
+              <p>Assiette
+                <label for="name"><?php $client['DimancheAss'] ?></label>
+              </p>
+              <p>Laitage
+                <label for="name"><?= $client['DimancheLaitier1'] ?></label> <label for="name"><?= $client['DimancheLaitier2'] ?></label>
+                <label for="name"><?= $client['DimancheLaitier3'] ?></label>
+              </p>
+              <p>Dessert
+                <label for="name"><?= $client['DimancheDess1'] ?></label> <label for="name"><?= $client['DimancheDess2'] ?></label>
+              </p>
+        </section>
 
 
 
