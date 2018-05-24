@@ -12,7 +12,7 @@ $client = $pdoStat ->fetch();
   <meta charset="utf-8">
   <title>Modif Menu Sans Sel</title>
   <link rel="stylesheet" type="text/css" href="css/reboot.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/MonStyle.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
 </head>

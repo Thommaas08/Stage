@@ -13,7 +13,7 @@ $client = $pdoStat ->fetch();
   <meta charset="utf-8">
   <title>Renseigment</title>
   <link rel="stylesheet" type="text/css" href="css/reboot.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/MonStyle.css">
 </head>
 <body>
   <?php include 'Header.php'?>
@@ -30,7 +30,7 @@ $client = $pdoStat ->fetch();
             <p>Viande
               <label for="name"><?= $client['LundiViande1'] ?></label>
             </p>
-            <p>Legume
+            <p>Légume
               <label for="name"><?= $client['LundiLegume1'] ?></label>
             </p>
             <p>Laitage
@@ -49,7 +49,7 @@ $client = $pdoStat ->fetch();
                 <p>Viande
                   <label for="name"><?= $client['MardiViande1'] ?></label>
                 </p>
-                <p>Legume
+                <p>Légume
                   <label for="name"><?= $client['MardiLegume1'] ?></label>
                 </p>
                 <p>Laitage
@@ -68,7 +68,7 @@ $client = $pdoStat ->fetch();
                 <p>Viande
                   <label for="name"><?= $client['MercrediViande1'] ?></label>
                 </p>
-                <p>Legume
+                <p>Légume
                   <label for="name"><?= $client['MercrediLegume1'] ?></label>
                 </p>
                 <p>Laitage
@@ -87,7 +87,7 @@ $client = $pdoStat ->fetch();
                 <p>Viande
                   <label for="name"><?= $client['JeudiViande1'] ?></label>
                 </p>
-                <p>Legume
+                <p>Légume
                   <label for="name"><?= $client['JeudiLegume1'] ?></label>
                 </p>
                 <p>Laitage
@@ -106,7 +106,7 @@ $client = $pdoStat ->fetch();
                 <p>Viande
                   <label for="name"><?= $client['VendrediViande1'] ?></label>
                 </p>
-                <p>Legume
+                <p>Légume
                   <label for="name"><?= $client['VendrediLegume1'] ?></label>
                 </p>
                 <p>Laitage
@@ -125,7 +125,7 @@ $client = $pdoStat ->fetch();
                 <p>Viande
                   <label for="name"><?= $client['SamediViande1'] ?></label>
                 </p>
-                <p>Legume
+                <p>Légume
                   <label for="name"><?= $client['SamediLegume1'] ?></label>
                 </p>
                 <p>Laitage
@@ -144,7 +144,7 @@ $client = $pdoStat ->fetch();
                 <p>Viande
                   <label for="name"><?= $client['DimancheViande1'] ?></label>
                 </p>
-                <p>Legume
+                <p>Légume
                   <label for="name"><?= $client['DimancheLegume1'] ?></label>
                 </p>
                 <p>Laitage

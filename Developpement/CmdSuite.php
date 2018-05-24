@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Recherche Bénéficiaire</title>
   <link rel="stylesheet" type="text/css" href="css/reboot.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/MonStyle.css">
 
 </head>
 <body>
@@ -57,7 +57,7 @@
         <p class="InfosRefD"><?php echo ($data['Adress']); ?></p>
         <p class=""> <?php echo($data['CodePostal']) ?></p>
         <p class=""><?php echo($data['Commune']) ?></p>
-        <a href="CmdSuite2.php?numclient=<?= $data['Id']?>">Cree une commande </a>
+        <a href="CmdSuite2.php?numclient=<?= $data['Id']?>">Créer une commande </a>
 
       </div>
 

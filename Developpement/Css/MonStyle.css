@@ -102,7 +102,7 @@ section.center{
 label{
     display:block;
     color : #9cc224;
-    text-align: center;
+    text-align: left;
 }
 
 .inputText{
@@ -356,4 +356,11 @@ h2{
 
 .closebtn:hover {
     color: black;
+}
+li{
+  list-style-type: square;
+}
+.inpuText{
+  width: 15rem;
+  height: 2rem;
 }

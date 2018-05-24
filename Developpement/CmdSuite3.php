@@ -22,7 +22,7 @@ $Bene = $pdoStat ->fetch();
 
   <title>Renseigment</title>
   <link rel="stylesheet" type="text/css" href="css/reboot.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/MonStyle.css">
 </head>
 <body>
   <?php include 'Header.php'?>
@@ -48,31 +48,36 @@ $Bene = $pdoStat ->fetch();
       <input class="btnAddRef" type="submit" name="" value="Enregister  ">
 
          <h1>lundi</h1>
-           <li> Potage
+         <ul>
+           <li><h3>Potage</h3>
              <p><input type="radio" name="mon_champ" value="<?= $client['LundiPotage'] ?>"> <?= $client['LundiPotage'] ?>
              </p>
 
            </li>
-           <li>Entrée
+           <li><h3>Entrée</h3>
              <p>
-               <input type="radio" name="mon_champ1" value="<?= $client['LundiEntree1'] ?>"><?= $client['LundiEntree1'] ?>
-               <input type="radio" name="mon_champ1" value="<?= $client['LundiEntree2'] ?>"><?= $client['LundiEntree2'] ?>
-               <input type="radio" name="mon_champ1" value="<?= $client['LundiEntree3'] ?>"><?= $client['LundiEntree3'] ?>
+               <input type="radio" name="mon_champ1" value="<?= $client['LundiEntree1'] ?>"> <?= $client['LundiEntree1'] ?>
+               <input type="radio" name="mon_champ1" value="<?= $client['LundiEntree2'] ?>"> <?= $client['LundiEntree2'] ?>
+               <input type="radio" name="mon_champ1" value="<?= $client['LundiEntree3'] ?>"> <?= $client['LundiEntree3'] ?>
              </p>
            </li>
-           <li> Plat garni <p>Viande
-               <input type="radio" name="Viande1" value="<?= $client['LundiViande1'] ?>"><?= $client['LundiViande1'] ?>
-             <input type="radio" name="Viande1" value="<?= $client['LundiViande2'] ?>"><?= $client['LundiViande2'] ?></p>
+           <li> <h3>Plat garni </h3><p> Viande :
+               <input type="radio" name="Viande1" value="<?= $client['LundiViande1'] ?>"> <?= $client['LundiViande1'] ?>
+               <input type="radio" name="Viande1" value="<?= $client['LundiViande2'] ?>"> <?= $client['LundiViande2'] ?></p>
 
 
-             <p>légumes<input type="radio" name="legume1" value="<?= $client['LundiLegume1'] ?>"><?= $client['LundiLegume1'] ?>
-           <input type="radio" name="legume1" value="<?= $client['LundiLegume2'] ?>"><?= $client['LundiLegume2'] ?>
+             <p>légumes : <input type="radio" name="legume1" value="<?= $client['LundiLegume1'] ?>"> <?= $client['LundiLegume1'] ?>
+           <input type="radio" name="legume1" value="<?= $client['LundiLegume2'] ?>"> <?= $client['LundiLegume2'] ?>
+         </p>
+         Assiette complète <p> <input type="radio" name="LAsc" value="<?= $client['LundiAss'] ?>"><?= $client['LundiAss'] ?> <input type="radio" name="LAsc" value=""> ne prend rien</p>
            </li>
-           <li> Assiette complète <p><input type="radio" name="LAsc" value="<?= $client['LundiAss'] ?>"><?= $client['LundiAss'] ?> <input type="radio" name="LAsc" value=""> ne prend rien</p></li>
-           <li> Produit laitier<p> <input type="radio" name="llaitage1" value="<?= $client['LundiLegume2'] ?>"><?= $client['LundiLegume2'] ?>  <input type="radio" name="llaitage1" value="<?= $client['LundiLegume2'] ?>"><?= $client['LundiLegume2'] ?>
-             <input type="radio" name="llaitage1" value="<?= $client['LundiLegume2'] ?>"><?= $client['LundiLegume2'] ?></p></p></li>
-           <li>Dessert <p><input type="radio" name="ldessert" value="<?= $client['LundiDess1'] ?>"><?= $client['LundiDess1'] ?>  <input type="radio" name="ldessert" value="<?= $client['LundiDess2'] ?>"><?= $client['LundiDess2'] ?>
-             <input type="radio" name="ldessert" value="<?= $client['LundiDess3'] ?>"><?= $client['LundiDess3'] ?></p></li>
+
+           <li><h3>Produit laitier</h3> <p> <input type="radio" name="llaitage1" value="<?= $client['LundiLegume2'] ?>"> <?= $client['LundiLegume2'] ?>  <input type="radio" name="llaitage1" value="<?= $client['LundiLegume2'] ?>"> <?= $client['LundiLegume2'] ?>
+             <input type="radio" name="llaitage1" value="<?= $client['LundiLegume2'] ?>"> <?= $client['LundiLegume2'] ?></p></p></li>
+           <li><h3>Dessert </h3><p><input type="radio" name="ldessert" value="<?= $client['LundiDess1'] ?>"> <?= $client['LundiDess1'] ?>  <input type="radio" name="ldessert" value="<?= $client['LundiDess2'] ?>"> <?= $client['LundiDess2'] ?>
+             <input type="radio" name="ldessert" value="<?= $client['LundiDess3'] ?>"> <?= $client['LundiDess3'] ?></p></li>
+         </ul>
+
          </section>
 
        </div>

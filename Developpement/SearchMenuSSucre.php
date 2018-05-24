@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Reche Sans sucre</title>
   <link rel="stylesheet" type="text/css" href="css/reboot.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/MonStyle.css">
 
 </head>
 <body>
@@ -65,7 +65,7 @@
   ?>
   <br>
   <form class="" action="RecherMenuSSucre.php" method="post">
-    <input class="btnAddRef" type="submit" name="" value="RECHERCHER ">
+    <input class="btnAddRef" type="submit" name="" value="Recherche menu ">
   </form>
 </body>
 </html>

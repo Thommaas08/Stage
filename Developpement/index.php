@@ -12,9 +12,9 @@
 
 
     <div class="text_slider">
-        <p>Bienvenue sur le site de la Communauté de Commue des Lisières de L'Oise! <br>
+        <p>Bienvenue sur le site de la Communauté de Communes des Lisières de l'Oise ! <br>
         Ce site nommé vous permettra la saisie des menus pour le portage de repas  <br>
-        Ce site a été fait par : Thomas Samul,Etudiant en Deuxième Année de Dut Informatique d'Amiens  </p>
+        Ce site a été réalisé par : Thomas Samul, Etudiant en Deuxième Année de DUT Informatique, Université Jules Verne d'Amiens  </p>
     </div>
   <?php include 'Footer.php' ?>
   </body>

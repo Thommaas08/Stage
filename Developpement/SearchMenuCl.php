@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Recherche menu classique</title>
   <link rel="stylesheet" type="text/css" href="css/reboot.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/MonStyle.css">
 
 </head>
 <body>
@@ -23,7 +23,7 @@
     $requete = "$requete"."Nom_M like '".$Nom."%' AND ";
   }
   if($date!=NULL){
-    $requete = $requete."Date_M like '%".$CodeP."%' AND ";
+    $requete = $requete."Date_M like '%".$date."%' AND ";
   }
 
   $requete = substr($requete,0,-4);
@@ -66,7 +66,7 @@
   ?>
   <br>
   <form class="" action="RecherMenuCl.php" method="post">
-    <input class="btnAddRef" type="submit" name="" value="RECHERCHER Bénéficiaire">
+    <input class="btnAddRef" type="submit" name="" value="Recherche menu">
   </form>
 </body>
 </html>

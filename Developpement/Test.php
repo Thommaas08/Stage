@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Ajouter un bénéficiare</title>
   <link rel="stylesheet" type="text/css" href="css/reboot.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/MonStyle.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
@@ -32,16 +32,15 @@
 
         <label for="name">Commune</label>
         <input class="inputText" type="text" name="Commune"  placeholder="Commune">
-
+        <label for="name">Date de naissance</label>
+        <input class="inputText" type="date" name="DateNais"  placeholder="">
+        <label for="name">Numéro de téléphone </label>
+        <input class="inputText" type="text" name="Telephone"  placeholder="Numéro de téléphone">
         <label for="name">Régime</label>
         <input type="radio" name="mon_Menu" value="Normal"/> Normal
         <input type="radio" name="mon_Menu" value="Sans Sel"/> Sans Sel
         <input type="radio" name="mon_Menu" value="Sans Sucre"/> Sans Sucre
 
-        <label for="name">Date de naissance</label>
-        <input class="inputText" type="date" name="DateNais"  placeholder="">
-        <label for="name">Numéro de téléphone </label>
-        <input class="inputText" type="text" name="Telephone"  placeholder="Numéro de téléphone">
 
 
       </section>
@@ -56,10 +55,10 @@
         <input class="inputText" type="text" name="Contact"  placeholder="Nom ">
         <label for="name">Prénom</label>
         <input class="inputText" type="text" name="ContactPre"  placeholder="Prénom">
-        <label for="name">Lien de parené</label>
-        <input type="radio" name="mon_champ2" value="Voisin"/> Voisin
+        <label for="name">Lien de parenté</label>
         <input type="radio" name="mon_champ2" value="Enfant"/> Enfant
         <input type="radio" name="mon_champ2" value="Frère/soeur"/> Frère/Soeur
+        <input type="radio" name="mon_champ2" value="Voisin"/> Voisin
         <input type="radio" name="mon_champ2" value="Autre"/> Autre
 
 

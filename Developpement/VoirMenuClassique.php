@@ -13,7 +13,7 @@ $client = $pdoStat ->fetch();
   <meta charset="utf-8">
   <title>Renseigment</title>
   <link rel="stylesheet" type="text/css" href="css/reboot.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/MonStyle.css">
 </head>
 <body>
   <?php include 'Header.php'?>

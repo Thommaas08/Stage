@@ -131,6 +131,31 @@ session_start();
             // echo ("L'envoi a bien été effectué !");
 //,,,,,,
 // header("Location: index.php ");
- print_r($req);
+ //print_r($req);
+ if ($req) {
+   $message= 'Le menu a été Enregistrer';
 
+ }
+ else {
+   $message="Echec de l'enregistrement du menu";
+   // code...
+ }
 ?>
+
+<!DOCTYPE html>
+<html lang="fr" >
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="css/reboot.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+  <?php include 'Header.php';?>
+  <div class="alert warning">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+    <?php echo $message ?>
+  </div>
+</body>
+</html>

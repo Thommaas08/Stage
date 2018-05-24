@@ -34,12 +34,15 @@ if ($executeIsOk) {
      <meta charset="utf-8">
      <title></title>
      <link rel="stylesheet" type="text/css" href="css/reboot.css">
-     <link rel="stylesheet" type="text/css" href="css/style.css">
+     <link rel="stylesheet" type="text/css" href="css/MonStyle.css">
    </head>
    <body>
      <?php include 'Header.php';?>
 
-  <?php echo $message; ?>
+     <div class="alert warning">
+       <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+         <?php echo $message; ?>
+     </div>
 
    </body>
  </html>
