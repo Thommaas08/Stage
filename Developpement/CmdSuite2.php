@@ -40,13 +40,17 @@ $client = $pdoStat ->fetch();
 
         <?php
         //Affichage des menu
+        $menu= 0;
         try {
           if($client['Regime']=="Normal"){
             $req = $bdd->query('SELECT Id,Nom_M,Date_M FROM menuclassique order by Date_M desc');
+            $menu = 1;
           }  elseif ($client['Regime']=="Sans Sel") {
             $req = $bdd->query('SELECT Id,Nom_M,Date_M FROM menussel order by Date_M desc');
+            $menu =2;
           } elseif ($client['Regime']=="Sans Sucre") {
             $req = $bdd->query('SELECT Id,Nom_M,Date_M FROM menussucre order by Date_M desc');
+            $menu= 3;
           };
           while($data = $req->fetch()){
             ?>
@@ -56,7 +60,7 @@ $client = $pdoStat ->fetch();
 
 
               <div class="InfosRefD">
-                <p><?php echo($data['Nom_M']); ?>--<?php echo ($data['Date_M']); ?>    <a href="CmdSuite3.php?numMenu=<?= $data['Id']?>&?numclient=<?= $client['Id']?>">Suite</a></p>
+                <p><?php echo($data['Nom_M']); ?>--<?php echo ($data['Date_M']); ?>  <a href="CmdSuite3.php?numMenu=<?= $data['Id']?>&numclient=<?= $client['Id']?>&typemenu=<?= $menu ?>">Suite</a></p>
 
               </div>
 
