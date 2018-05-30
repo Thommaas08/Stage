@@ -28,15 +28,21 @@
                <li><a href="RecherMenuSSucre.php">Menu sans sucre </a></li>
             </ul>
          </li>
-         <li><a href="#">Feuille de route</a></li>
-         <!-- n2 -->
+          <!-- n2 -->
+      </ul>
+   </li>
+   <li>
+      <a href="#">Saisie</a>
+      <ul>
+         <li><a href="Commande.php"> Saisie Menu Bénéficiaire </a></li>
+         <li><a href="#">Rechercher Menu Bénéficiaire</a></li>
       </ul>
    </li>
    <li>
       <a href="#">Commande</a>
       <ul>
-         <li><a href="Commande.php"> Créer une Commande </a></li>
-         <li><a href="#">Rechercher une Commande</a></li>
+         <li><a href="#"> Création Commande </a></li>
+         <li><a href="#"> Feuille de route</a></li>
       </ul>
    </li>
    <li>

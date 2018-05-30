@@ -4,8 +4,13 @@ $pdoStat=$bdd -> prepare('SELECT * FROM client WHERE Id=:num');
 $pdoStat-> bindValue(':num',$_GET['numclient'],PDO::PARAM_INT);
 $executeIsOk = $pdoStat-> execute();
 $client = $pdoStat ->fetch();
-
 ?>
+<?php
+$pdoStat=$bdd -> prepare('SELECT * FROM commande WHERE Id_b=:num');
+$pdoStat-> bindValue(':num',$_GET['numclient'],PDO::PARAM_INT);
+$executeIsOk = $pdoStat-> execute();
+$histo = $pdoStat ->fetch();
+ ?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -34,7 +39,16 @@ $client = $pdoStat ->fetch();
            <label for="name"><?= $client['DateNais'] ?></label>
            <label for="name"><?= $client['Telephone'] ?></label>
          </p>
+         <div class="grid grid-pad">
+           <div class="col-1-1">
+              <div class="content">
+                  <h1>Historique des Commande </h1>
+                <label for="name"> <?php  $histo['Id'] ?>   on été effectuer </label>
+              </div>
+           </div>
+         </div>
       </section>
+
 
       <section class="bloc right">
         <h1>Informations Complémentaires</h1>
@@ -51,9 +65,8 @@ $client = $pdoStat ->fetch();
         <?= $client['Contact'] ?>
         <label for="name">Adresse mail </label>
         <?=$client['ContactMail'] ?>
-        <br>
 
-        <input class="btnAddRef" type="submit" name="" value="Retour ">
+
 
       </form>
     </body>

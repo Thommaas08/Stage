@@ -31,16 +31,6 @@ footer{
 }
 
 
-#help a{
-  position: absolute;
-  padding-top: 4rem;
-  font-size: 1.2rem;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-decoration: none;
-  color : rgba(255, 255, 255, 1);
-}
-
 
 /*---------------------Index---------------------*/
 
@@ -311,8 +301,6 @@ h1{
   padding: 9px 6px 10px 20px;
   cursor:pointer;
   transition: 0.5s;
-
-
 }
 h2{
   text-align: center;

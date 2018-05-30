@@ -37,7 +37,7 @@ $Bene = $pdoStat ->fetch();
   <?php include 'Header.php'?>
   <div class="FORMAdd">
     <!-- Formulaire HTML pour ajouter un client -->
-    <form enctype="multipart/form-data" class="ADDForm" action="#" method="post">
+    <form enctype="multipart/form-data" class="ADDForm" action="InsertCommande.php" method="post">
 
       <div class="grid grid-pad">
           <div class="col-1-1">
@@ -47,7 +47,7 @@ $Bene = $pdoStat ->fetch();
                  <div class="col-1-2">
                    <div class="content">
                      <input type="hidden" name="Id" value="<?= $Bene['Id']  ?>">
-                     <p><label for="name"><?= $Bene['Civi'] ?>  <?= $Bene['Nom'] ?> <?= $Bene['Prenom'] ?> </label></p>
+                     <p><label for="name"> <?= $Bene['Civi'] ?> <?= $Bene['Nom'] ?> <?= $Bene['Prenom'] ?> </label></p>
                      <p>
                        <label for="name"><?= $Bene['Adress'] ?>  <?= $Bene['AdressComp'] ?></label>
                        <label for="name"><?= $Bene['CodePostal'] ?>  <?= $Bene['Commune'] ?></label>
@@ -57,8 +57,8 @@ $Bene = $pdoStat ->fetch();
                  </div>
                  <div class="col-1-2">
                    <div class="content">
-                     <input type="hidden" name="Id" value="<?= $client ['Id']  ?>">
-                     <p><label for="name"> <?= $client ['Nom_M'] ?>  <?= $client['Date_M'] ?> </label></p>
+                     <input type="hidden" name="IdMenu" value="<?= $client ['Id']  ?>">
+                     <p><label for="name"> <?= $client ['Nom_M'] ?> <?= $client ['Date_M'] ?> </label></p>
                      <input class="btnAddRef" type="submit" name="" value="Enregister  ">
                    </div>
                  </div>
@@ -85,13 +85,15 @@ $Bene = $pdoStat ->fetch();
        </li>
        <li> <h3>Plat garni </h3><p> Viande :
            <input type="radio" name="Viande1" value="<?= $client['LundiViande1'] ?>"> <?= $client['LundiViande1'] ?>
-           <input type="radio" name="Viande1" value="<?= $client['LundiViande2'] ?>"> <?= $client['LundiViande2'] ?></p>
+           <input type="radio" name="Viande1" value="<?= $client['LundiViande2'] ?>"> <?= $client['LundiViande2'] ?>
+           <input type="radio" name="Viande1" value=""> </p>
 
 
          <p>légumes : <input type="radio" name="legume1" value="<?= $client['LundiLegume1'] ?>"> <?= $client['LundiLegume1'] ?>
-       <input type="radio" name="legume1" value="<?= $client['LundiLegume2'] ?>"> <?= $client['LundiLegume2'] ?>
+           <input type="radio" name="legume1" value="<?= $client['LundiLegume2'] ?>"> <?= $client['LundiLegume2'] ?>
+           <input type="radio" name="legume1" value="">
      </p>
-     Assiette complète <p> <input type="radio" name="LAsc" value="<?= $client['LundiAss'] ?>"><?= $client['LundiAss'] ?> <input type="radio" name="LAsc" value=""> ne prend rien</p>
+     Assiette complète : <p> <input type="radio" name="LAsc" value="<?= $client['LundiAss'] ?>"><?= $client['LundiAss'] ?> <input type="radio" name="LAsc" value=""> ne prend rien</p>
        </li>
 
        <li><h3>Produit laitier</h3> <p> <input type="radio" name="llaitage1" value="<?= $client['LundiLegume2'] ?>"> <?= $client['LundiLegume2'] ?>  <input type="radio" name="llaitage1" value="<?= $client['LundiLegume2'] ?>"> <?= $client['LundiLegume2'] ?>
@@ -376,6 +378,7 @@ $Bene = $pdoStat ->fetch();
   <?php } ?>
 
        <input class="btnAddRef" type="submit" name="" value="Enregister  ">
+       
       </form>
     </body>
     </html>
