@@ -59,7 +59,7 @@
         <p class=""><?php echo($data['Commune']) ?></p>
         <a href="Voir.php?numclient=<?= $data['Id']?>">Voir </a>
         <a href="TestModif.php?numclient=<?= $data['Id']?>"> Modifier </a>
-        <a href="Supprime.php?numclient=<?= $data['Id']?>" > Supprimer</a>
+        <a href="Supprime.php?numclient=<?= $data['Id']?>"> Supprimer</a>
 
       </div>
 

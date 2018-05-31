@@ -5,12 +5,7 @@ $pdoStat-> bindValue(':num',$_GET['numclient'],PDO::PARAM_INT);
 $executeIsOk = $pdoStat-> execute();
 $client = $pdoStat ->fetch();
 ?>
-<?php
-$pdoStat=$bdd -> prepare('SELECT * FROM commande WHERE Id_b=:num');
-$pdoStat-> bindValue(':num',$_GET['numclient'],PDO::PARAM_INT);
-$executeIsOk = $pdoStat-> execute();
-$histo = $pdoStat ->fetch();
- ?>
+
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -29,21 +24,43 @@ $histo = $pdoStat ->fetch();
       <section class="bloc left">
         <h1>Informations Bénéficiaire</h1>
         <input type="hidden" name="Id" value="<?= $client['Id']  ?>">
-      <p><label for="name"><?= $client['Civi'] ?>  <?= $client['Nom'] ?> <?= $client['Prenom'] ?> </label></p>
-          <p>
-             <label for="name"><?= $client['Adress'] ?>  <?= $client['AdressComp'] ?></label>
-             <label for="name"><?= $client['CodePostal'] ?>  <?= $client['Commune'] ?></label>
-           </p>
-         <p>
-           <label for="name"><?= $client['Regime'] ?></label>
-           <label for="name"><?= $client['DateNais'] ?></label>
-           <label for="name"><?= $client['Telephone'] ?></label>
-         </p>
+        <?php $id=$client['Id'] ?>
+        <ul>
+          <p><label for="name"><?= $client['Civi'] ?>  <?= $client['Nom'] ?> <?= $client['Prenom'] ?> </label></p>
+              <p>
+                 <label for="name"><?= $client['Adress'] ?>  <?= $client['AdressComp'] ?></label>
+                 <label for="name"><?= $client['CodePostal'] ?>  <?= $client['Commune'] ?></label>
+               </p>
+             <p>
+               <label for="name"><?= $client['Regime'] ?></label>
+               <label for="name"><?= $client['DateNais'] ?></label>
+               <label for="name"><?= $client['Telephone'] ?></label>
+             </p>
+        </ul>
+
          <div class="grid grid-pad">
            <div class="col-1-1">
               <div class="content">
                   <h1>Historique des Commande </h1>
-                <label for="name"> <?php  $histo['Id'] ?>   on été effectuer </label>
+                  <?php
+                  $req = $bdd->query("SELECT * FROM commande WHERE Id_b = $id   ");
+                  while ($data = $req->fetch())
+                  {
+                    ?>
+                    <ul>
+                      <p><input type="radio" name="<?php $data['Id_C'] ?>" value=""/> <?php echo $data['Id_C'] ?>
+                        <a href="Voir.php?numclient=<?= $data['Id_C']?>"> Voir </a>
+                        <a href="TestModif.php?numclient=<?= $data['Id_C']?>"> Modifier </a>
+                        <a href="Supprime.php?numclient=<?= $data['Id_C']?> "> Supprimer</a></p>
+                    </ul>
+
+                    <?php
+                  }
+                  $req->closeCursor();
+                  ?>
+
+
+
               </div>
            </div>
          </div>
@@ -52,21 +69,21 @@ $histo = $pdoStat ->fetch();
 
       <section class="bloc right">
         <h1>Informations Complémentaires</h1>
-        <label for="name">Civilité</label>
-        <?= $client['ContactCivi']?>
+        <ul>
+          <label for="name">Civilité</label>
+          <?= $client['ContactCivi']?>
 
-        <label for="name">Personne a contacter</label>
-        <?=  $client['Contact'] ?>
-        <label for="name">Prénom</label>
-        <?=  $client['ContactPre'] ?>
-        <label for="name">Lien parenté</label>
-        <?=  $client['Contact'] ?>
-        <label for="name">Numéro de téléphone </label>
-        <?= $client['Contact'] ?>
-        <label for="name">Adresse mail </label>
-        <?=$client['ContactMail'] ?>
-
-
+          <label for="name">Personne a contacter</label>
+          <?=  $client['Contact'] ?>
+          <label for="name">Prénom</label>
+          <?=  $client['ContactPre'] ?>
+          <label for="name">Lien parenté</label>
+          <?=  $client['Contact'] ?>
+          <label for="name">Numéro de téléphone </label>
+          <?= $client['Contact'] ?>
+          <label for="name">Adresse mail </label>
+          <?=$client['ContactMail'] ?>
+        </ul>
 
       </form>
     </body>
