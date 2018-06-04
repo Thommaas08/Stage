@@ -47,7 +47,9 @@ $Bene = $pdoStat ->fetch();
                  <div class="col-1-2">
                    <div class="content">
                      <input type="hidden" name="Id" value="<?= $Bene['Id']  ?>">
-                     <p><label for="name"> <?= $Bene['Civi'] ?> <?= $Bene['Nom'] ?> <?= $Bene['Prenom'] ?> </label></p>
+                     <p><label for="name"><?= $Bene['Civi'] ?> <?= $Bene['Nom'] ?> <?= $Bene['Prenom'] ?> </label></p>
+                     <input type="hidden" name="Nom" value="<?= $Bene['Nom'] ?>">
+                     <input type="hidden" name="Prenom" value="<?= $Bene['Prenom'] ?>">
                      <p>
                        <label for="name"><?= $Bene['Adress'] ?>  <?= $Bene['AdressComp'] ?></label>
                        <label for="name"><?= $Bene['CodePostal'] ?>  <?= $Bene['Commune'] ?></label>
@@ -59,6 +61,8 @@ $Bene = $pdoStat ->fetch();
                    <div class="content">
                      <input type="hidden" name="IdMenu" value="<?= $client ['Id']  ?>">
                      <p><label for="name"> <?= $client ['Nom_M'] ?> <?= $client ['Date_M'] ?> </label></p>
+                     <input type="hidden" name="date" value="<?= $client ['Date_M'] ?>">
+                     <input type="hidden" name="type" value="<?= $_GET['typemenu']?>">
                      <input class="btnAddRef" type="submit" name="" value="Enregister  ">
                    </div>
                  </div>
@@ -378,7 +382,7 @@ $Bene = $pdoStat ->fetch();
   <?php } ?>
 
        <input class="btnAddRef" type="submit" name="" value="Enregister  ">
-       
+
       </form>
     </body>
     </html>

@@ -6,20 +6,70 @@
   <link rel="stylesheet" type="text/css" href="css/reboot.css">
   <link rel="stylesheet" type="text/css" href="css/MonStyle.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <script type="text/javascript">
+  function surligne(champ, erreur)
+    {
+       if(erreur)
+          champ.style.backgroundColor = "#fba";
+       else
+          champ.style.backgroundColor = "";
+    }
+  function verifPseudo(champ)
+    {
+       if(champ.value.length < 2 || champ.value.length > 25)
+       {
+          surligne(champ, true);
+          return false;
+       }
+       else
+       {
+          surligne(champ, false);
+          return true;
+       }
+    }
+  function verifMail(champ)
+    {
+       var regex = /^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/;
+       if(!regex.test(champ.value))
+       {
+          surligne(champ, true);
+          return false;
+       }
+       else
+       {
+          surligne(champ, false);
+          return true;
+       }
+    }
+  function verifForm(f)
+    {
+       var pseudoOk = verifPseudo(f.Nom);
+       var mailOk = verifMail(f.MailContact);
+
+       if(pseudoOk && mailOk && ageOk)
+          return true;
+       else
+       {
+          alert("Veuillez remplir correctement tous les champs");
+          return false;
+       }
+    }
+
+  </script>
 </head>
 <body>
   <?php include 'Header.php' ?>
   <div class="FORMAdd">
     <!-- Formulaire HTML pour ajouter un client -->
-    <form enctype="multipart/form-data" class="ADDForm" action="TestInsert.php" method="post">
+    <form enctype="multipart/form-data" class="ADDForm" action="TestInsert.php" method="post" onsubmit="return verifForm(this)">
       <section class="bloc left">
         <h1>Informations Bénéficiaire</h1>
-        <label for="name">Civilité</label>
+        <label for="name">Civilité <b>*</b> </label>
         <input type="radio" name="mon_champ" value="Monsieur"/> Monsieur
         <input type="radio" name="mon_champ" value="Madame"/> Madame
 
         <label for="name">Nom</label>
-        <input class="inputText" type="text" name="Nom"  placeholder="Nom...">
+        <input class="inputText" type="text" name="Nom"  placeholder="Nom..." onblur="verifPseudo(this)">
         <label for="name">Prénom</label>
         <input class="inputText" type="text" name="Prenom"  placeholder="Prénom...">
 
@@ -65,7 +115,7 @@
         <label for="name">Numéro de téléphone </label>
         <input class="inputText" type="text" name="TelContact"  placeholder="Numéro de téléphone">
         <label for="name">Adresse mail </label>
-        <input class="inputText" type="text" name="MailContact"  placeholder="">
+        <input class="inputText" type="text" name="MailContact"  placeholder="" onblur="verifMail(this)">
         <br>
         <br>
 
