@@ -1,6 +1,8 @@
 <?php
 session_start();
+ini_set("display_errors",0);error_reporting(0);
 require 'ConnexionBDD.php';
+
 
 //Conversion de 3 string en type date pour la BDD
             //Requete de l'insertion d'un Bénéficiaire

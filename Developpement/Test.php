@@ -10,13 +10,14 @@
   function surligne(champ, erreur)
     {
        if(erreur)
-          champ.style.backgroundColor = "#fba";
+          champ.style.backgroundColor = "#ffcc00";
        else
           champ.style.backgroundColor = "";
     }
-  function verifPseudo(champ)
+
+  function verifNom(champ)
     {
-       if(champ.value.length < 2 || champ.value.length > 25)
+       if(champ.value.length < 2 || champ.value.length > 20)
        {
           surligne(champ, true);
           return false;
@@ -27,26 +28,70 @@
           return true;
        }
     }
-  function verifMail(champ)
-    {
-       var regex = /^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/;
-       if(!regex.test(champ.value))
-       {
-          surligne(champ, true);
-          return false;
-       }
-       else
-       {
-          surligne(champ, false);
-          return true;
-       }
-    }
+    function verifPrenom(champ)
+      {
+         if(champ.value.length < 2 || champ.value.length > 20)
+         {
+            surligne(champ, true);
+            return false;
+         }
+         else
+         {
+            surligne(champ, false);
+            return true;
+         }
+      }
+      function verifAdress(champ)
+        {
+           if(champ.value.length < 6 || champ.value.length > 50)
+           {
+              surligne(champ, true);
+              return false;
+           }
+           else
+           {
+              surligne(champ, false);
+              return true;
+           }
+        }
+        function verifCom(champ)
+          {
+             if(champ.value.length < 6 || champ.value.length > 30)
+             {
+                surligne(champ, true);
+                return false;
+             }
+             else
+             {
+                surligne(champ, false);
+                return true;
+             }
+          }
+  // function verifMail(champ)
+  //   {
+  //      var regex = /^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/;
+  //      if(!regex.test(champ.value))
+  //      {
+  //         surligne(champ, true);
+  //         return false;
+  //      }
+  //      else
+  //      {
+  //         surligne(champ, false);
+  //         return true;
+  //      }
+  //   }
   function verifForm(f)
     {
-       var pseudoOk = verifPseudo(f.Nom);
-       var mailOk = verifMail(f.MailContact);
+       var NomOk = verifNom(f.Nom);
+       var PrenomOk =verifPrenom(f.Prenom);
+       var AdressOk =verifAdress(f.Adresse);
+       var AdressOk =verifCom(f.Commune);
+      // var mailOk = verifMail(f.MailContact);
 
-       if(pseudoOk && mailOk && ageOk)
+
+
+       if(NomOk && PrenomOk && AdressOk)
           return true;
        else
        {
@@ -68,25 +113,25 @@
         <input type="radio" name="mon_champ" value="Monsieur"/> Monsieur
         <input type="radio" name="mon_champ" value="Madame"/> Madame
 
-        <label for="name">Nom</label>
-        <input class="inputText" type="text" name="Nom"  placeholder="Nom..." onblur="verifPseudo(this)">
-        <label for="name">Prénom</label>
-        <input class="inputText" type="text" name="Prenom"  placeholder="Prénom...">
+        <label for="name">Nom <b>*</b></label>
+        <input class="inputText" type="text" name="Nom"  placeholder="Nom..." onblur="verifNom(this)">
+        <label for="name">Prénom <b>*</b></label>
+        <input class="inputText" type="text" name="Prenom"  placeholder="Prénom..."onblur="verifPrenom(this)">
 
-        <label for="name">Adresse</label>
-        <input class="inputText" type="text" name="Adresse"  placeholder="12 rue...">
+        <label for="name">Adresse <b>*</b></label>
+        <input class="inputText" type="text" name="Adresse"  placeholder="12 rue..."onblur="verifAdress(this)">
         <label for="name">Adresse complémentaire</label>
         <input class="inputText" type="text" name="AdresseComplet"  placeholder="Complément...">
         <label for="name">Code postal</label>
         <input class="inputText" type="text" name="AdresseCodeP"  placeholder="60350 par exemple">
 
-        <label for="name">Commune</label>
-        <input class="inputText" type="text" name="Commune"  placeholder="Commune">
+        <label for="name">Commune <b>*</b></label>
+        <input class="inputText" type="text" name="Commune"  placeholder="Commune" onblur="verifCom(this)">
         <label for="name">Date de naissance</label>
         <input class="inputText" type="date" name="DateNais"  placeholder="">
         <label for="name">Numéro de téléphone </label>
         <input class="inputText" type="text" name="Telephone"  placeholder="Numéro de téléphone">
-        <label for="name">Régime</label>
+        <label for="name">Régime <b>*</b></label>
         <input type="radio" name="mon_Menu" value="Normal"/> Normal
         <input type="radio" name="mon_Menu" value="Sans Sel"/> Sans Sel
         <input type="radio" name="mon_Menu" value="Sans Sucre"/> Sans Sucre

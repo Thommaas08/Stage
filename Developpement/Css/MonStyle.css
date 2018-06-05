@@ -14,10 +14,13 @@ header{
   display: block;
 }
 header img {
-  position: absolute;
+   position: absolute;
   left: 40px;
   transform: translateX(10%);
-  width : 160px;
+  transition-property: color, background;
+    transition-duration: 500ms, 500ms;
+    transition-timing-function: initial, cubic-bezier(0.25,0.1,0.16,0.99);
+  /* width : 160px;  */
 }
 
 /*---------------------FOOTER---------------------*/
