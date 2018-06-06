@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="text/html" charset="utf-8" />
   <title>Ajouter un bénéficiare</title>
   <link rel="stylesheet" type="text/css" href="css/reboot.css">
   <link rel="stylesheet" type="text/css" href="css/MonStyle.css">
@@ -56,7 +56,7 @@
         }
         function verifCom(champ)
           {
-             if(champ.value.length < 6 || champ.value.length > 30)
+             if(champ.value.length < 5 || champ.value.length > 30)
              {
                 surligne(champ, true);
                 return false;

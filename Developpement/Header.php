@@ -1,7 +1,7 @@
 <header>
    <!-- http://localhost/php/Developpement/ -->
  <link href="css/StyleM.css" rel="stylesheet" type="text/css" />
- <img src="img/logo.png" alt="Logo">
+ <img src="img/comm.png" alt="Logo">
  <ul id="nav">
    <li class="current"><a href="index.php">Accueil</a></li>
    <!-- n1 -->
@@ -41,7 +41,7 @@
    <li>
       <a href="#">Commande</a>
       <ul>
-         <li><a href="#"> Création Commande </a></li>
+         <li><a href="fourni.php"> Création Commande </a></li>
          <li><a href="#"> Feuille de route</a></li>
       </ul>
    </li>
